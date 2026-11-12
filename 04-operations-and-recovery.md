@@ -1,0 +1,29 @@
+# SPX | operating model and recovery
+
+Owner: eight-person DevOps team (named primary/secondary on-call to be assigned). Business escalation: Thomas Brandt, Kobold After-Sales. Scope: DEV, QAS, PRD. Record ownership for AD, WMS, DHL, security and database in the handover.
+
+## Objectives and telemetry
+
+- PRD monthly user-facing availability target: 99.95%, measured by a synthetic 'login -> part search -> stock -> safe non-production/test order' journey from Germany and France plus server-side success/error metrics. Agree on denominator, business hours vs 24x7 and scheduled-maintenance treatment before sign-off. A 30-day 24x7 target allows approximately 21.6 minutes of total unavailability; don't silently exempt maintenance.
+- PRD RPO <=60 minutes and RTO <=4 hours are acceptance objectives for each in-scope failure class, including regional outage if intended by business. A cross-region PostgreSQL read replica is asynchronous and may exceed 60 minutes lag; use time-based replica-lag monitoring with a 30-minute warning and 45-minute critical threshold (initial thresholds, tune after load tests). Alerting does not itself enforce an RPO. Define maximum tolerable loss for files and in-flight DHL orders.
+- Alerts: login/AD failures; synthetic path; HTTP error rate and latency; VM/LB health; PostgreSQL availability/replication lag/storage/connections; stock import age (>75 minutes after agreed hourly schedule); failed or malformed SFTP deliveries; order outbox age, DHL 429/5xx, backup jobs, oldest monthly recovery point, certificate/keytab/SSH key expiry, WAN health and capacity. Route PRD pages to on-call; track incidents and change windows.
+- Observe application traces and audit fields with a correlation ID/order ID/file ID (never raw personal data). Keep telemetry and monitoring storage in approved EU region; set retention and sampling with security/audit team. Build dashboards per environment with direct links to alert/runbook and last successful stock import.
+
+## Backup and retention
+
+1. Configure managed database operational point-in-time backup retention for the maximum supported up-to-35-day window appropriate to the agreed restore needs; confirm current configuration and geo-backup availability. This is not sufficient for six-month audit retention.
+2. Configure Azure Backup for PostgreSQL Flexible Server **GA** long-term vault backup, with an approved monthly recovery-point retention schedule of at least six months (or a documented supported weekly schedule with monthly points retained for >=6 months). Confirm exact policy expression, vault redundancy, region and backup availability in the tenant before deployment. Do not rely on preview v2 to meet PRD controls. Snapshot/replica alone is not an independent audit backup.
+3. Verify a successful retained point for every calendar month, list its expiration date and alert before the oldest needed point expires. Keep vault access separate from app operations; use soft-delete/immutability where supported by the chosen configuration and approved policy. Store raw SFTP landing files and any export/replay material on a separately approved retention schedule.
+4. Restore a backup into an isolated EU test environment at least quarterly and verify PostgreSQL consistency plus selected application parts/orders (including stock provenance); log duration, recovery-point timestamp and owner. Before six months of history exist, demonstrate policy plus generated monthly points and schedule a six-month evidence check.
+
+## Incident and DR runbook (exercise before launch)
+
+1. Declare severity and timestamp; preserve evidence; identify whether app node, database AZ, WAN/AD, WMS, DHL, data corruption or entire region. If only app node is down, verify LB health and shift workload without invoking regional failover.
+2. For region outage, establish current primary availability and database replica's last-replayed transaction time; calculate recoverable-data age. Decide with incident commander whether loss <=60 minutes is possible. If not, escalate the breached RPO explicitly; do not present a passing restore as guaranteed. Fence the original write endpoint to prevent split brain and prevent import/order workers in two regions running concurrently.
+3. Promote the approved-region read replica using the vendor-supported procedure; activate the secondary SPX app and SFTP entry tier, configure new primary DB endpoint and internal DNS/route. Ensure EU Key Vault, TLS/keytab, on-prem AD connectivity and authorized DHL egress are working before re-opening writes.
+4. Reconcile undelivered SFTP files against the WMS sender, replay idempotently from retained landing files; reconcile shipments with DHL by order key before any retry. Verify a technician can log in, find a part, see stock and create exactly one test shipment through a controlled test mode.
+5. Measure RTO from declared incident to verified end-to-end service; measure RPO from last committed recoverable transaction and last successfully imported file, not backup schedule. Communicate user impact and any data-loss uncertainty. Document reverse replication, return-to-primary approval and failback as a separate controlled change.
+
+Change management: Sunday from 22:00 Europe/Berlin/Europe/Paris local time, subject to approved duration; announce changes, take pre-change backup/restore-point where appropriate, use rolling VM and DB maintenance, smoke test, monitor and roll back deployment artifact when safe. Rolling back database schema or DR promotion is not assumed reversible; use expand/contract migrations and recovery plan. Record incident drills, dependency outages and restore evidence for audit.
+
+Vendor references: https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex-overview ; https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-read-replicas
