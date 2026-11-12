@@ -1,0 +1,799 @@
+Date: Thu, 12 Nov 2026 11:57:27 +0000 (UTC)
+Message-ID: <756618860.59.1794484647570@be928ce8cf43>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_58_610361842.1794484647570"
+
+------=_Part_58_610361842.1794484647570
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>CO | Communication matrix</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>CO | Communication matrix</h1>
+    <div class=3D"Section1">
+        <div class=3D"confluence-information-macro confluence-information-m=
+acro-note">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
+rmation-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"5cdb0c58-e92e-46b5-ad19-2dae4bdd4377">Please add your additi=
+onal requested rules below</p>
+</div>
+</div>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1800" data-layout=3D"center" data-local-id=3D"28=
+31376e-7e3d-444e-93ff-bc740df95fab" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"f936bc1f-c70e-4eb1-9df7-57b4b9d97f04">
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"985e27e7-bb97-4903-8=
+9c5-ae8a6c8756eb" class=3D"confluenceTd">
+<p local-id=3D"41fd0203-618a-4459-ada6-8a35f0c403bf"><strong>Name&nbsp;/ De=
+scription</strong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"c4759793-dcaf-40a8-8=
+da1-d048439f110f" class=3D"confluenceTd">
+<p local-id=3D"1cd550ce-02f7-4b01-bc02-bccba709c13f"><strong>Source IP / Ho=
+st</strong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"bea195c7-8658-4f32-8=
+714-8e8ce5ad83fa" class=3D"confluenceTd">
+<p local-id=3D"34c0a392-282d-497b-a9bc-d58f05a11b4e"><strong>Target IP / Ho=
+st</strong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"894134b2-0ca5-4f76-a=
+8a5-776397ebd120" class=3D"confluenceTd">
+<p local-id=3D"3bbb0355-7fc2-4857-a32f-84c44a7fbc5a"><strong>Protocol&nbsp;=
+</strong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"12f4cd2c-ed27-46a8-b=
+6da-02d4a51b9a4d" class=3D"confluenceTd">
+<p local-id=3D"554129ce-8e64-488e-9060-8835cc8656f6"><strong>Port&nbsp;</st=
+rong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"89f3b9e3-f8b1-4e5c-a=
+0e6-3bffa7633e8b" class=3D"confluenceTd">
+<p local-id=3D"4652115a-9e3f-420d-a998-90b7be12b26f"><strong>Destination&nb=
+sp;</strong></p>
+</td>
+</tr>
+<tr data-local-id=3D"158ea362-4cc7-4b7e-9a7e-cbae013a99a0">
+<td data-highlight-colour=3D"#ffffff" data-local-id=3D"5e32f347-8785-4f08-8=
+077-8748aa0ff0c5" class=3D"confluenceTd">
+<p local-id=3D"3ef229d6-f8e9-49c8-a162-b2f4c643b1e1"></p>
+</td>
+<td data-highlight-colour=3D"#ffffff" data-local-id=3D"163c9704-e954-4b90-9=
+eb7-f662ada7387b" class=3D"confluenceTd">
+<p local-id=3D"c0d4e97e-480a-4f71-af10-6a15489a4c73"></p>
+</td>
+<td data-highlight-colour=3D"#ffffff" data-local-id=3D"f4a00cee-c38b-4f5d-9=
+c3c-f86b18a04c54" class=3D"confluenceTd">
+<p local-id=3D"71149b4d-9f7c-4f22-b807-6ceee77d0e3c"></p>
+</td>
+<td data-highlight-colour=3D"#ffffff" data-local-id=3D"d59d1570-1204-4b3e-9=
+7ad-6d7d4092b93c" class=3D"confluenceTd">
+<p local-id=3D"7b287024-1155-42b7-aaed-602d9f63221f"></p>
+</td>
+<td data-highlight-colour=3D"#ffffff" data-local-id=3D"6fad2a3d-1374-48d3-a=
+3d8-8ef764f13356" class=3D"confluenceTd">
+<p local-id=3D"3d533681-aec8-4546-ab10-bb33311d267a"></p>
+</td>
+<td data-highlight-colour=3D"#ffffff" data-local-id=3D"c796e7dc-30c2-4d4d-8=
+ada-498768164d69" class=3D"confluenceTd">
+<p local-id=3D"3523cec9-d987-4606-9304-4da6be52cd2f"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"58fb7894-1b74-4be8-a178-54336809dd0c">Default Firewall Rules=
+: Services listed below are reachable out of the box and don=E2=80=99t need=
+ to be requested.</p>
+</div>
+</div>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1800" data-layout=3D"center" data-local-id=3D"5c=
+f1b8d4-9268-45ac-95da-770f1817e54b" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"c8287af6-bf3b-43dd-bf70-2fdbafdec994">
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"aabeef79-2736-47b2-a=
+671-b402e5f6bbca" class=3D"confluenceTd">
+<p local-id=3D"a6b6b042-1ae2-4600-ae35-420c5d6829c0"><strong>Name&nbsp;/ De=
+scription</strong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"4e2b6a80-d495-4a77-9=
+bf1-8262b6dccec0" class=3D"confluenceTd">
+<p local-id=3D"7786c854-be79-41c0-a9d7-7bb7a236a114"><strong>Source IP / Ho=
+st</strong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"1089c261-dd72-47ac-b=
+d04-faac268bf975" class=3D"confluenceTd">
+<p local-id=3D"e264ca47-3c67-4f46-9212-cd4eaafb379b"><strong>Target IP / Ho=
+st</strong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"09f3782e-c0d8-47c2-a=
+236-2a97f70efc71" class=3D"confluenceTd">
+<p local-id=3D"eea0c1b5-26dd-46f5-aac3-dbd172525172"><strong>Protocol&nbsp;=
+</strong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"9161871b-19c7-46a3-9=
+f24-bb0075a56eee" class=3D"confluenceTd">
+<p local-id=3D"2f1888b3-0206-438e-88ee-21b64f8b1bba"><strong>Port&nbsp;</st=
+rong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"79626dcd-66a4-4b32-a=
+c80-12e09d9519bb" class=3D"confluenceTd">
+<p local-id=3D"485b3e88-b0ba-4791-8ed8-74d7fa9829ca"><strong>Destination&nb=
+sp;</strong></p>
+</td>
+</tr>
+<tr data-local-id=3D"5a31f47d-c30d-404f-bf64-c76f5ce88b26">
+<td data-local-id=3D"f0e80785-2666-4aa5-960e-aca078186904" class=3D"conflue=
+nceTd">
+<p local-id=3D"342a6d83-89ec-4cde-af16-377dcc1835e5">Ping&nbsp;</p>
+</td>
+<td data-local-id=3D"15deced8-dae8-442a-9f6c-7b2d2dda828a" class=3D"conflue=
+nceTd">
+<p local-id=3D"3b91d17e-2327-4a3b-8845-8d564a5ac7d3">&nbsp;</p>
+</td>
+<td data-local-id=3D"595304f1-9813-4ed0-8e9a-52b285bb4ae9" class=3D"conflue=
+nceTd">
+<p local-id=3D"ac5da194-5900-49e7-9d7d-3bf5bdbebb92">&nbsp;</p>
+</td>
+<td data-local-id=3D"b1181f25-4229-490a-9f16-66a9fc73056c" class=3D"conflue=
+nceTd">
+<p local-id=3D"08bb4382-6f5d-4a49-aadd-a315119544e7">ICMP&nbsp;</p>
+</td>
+<td data-local-id=3D"e5995038-7af7-4535-911c-87012afccc98" class=3D"conflue=
+nceTd">
+<p local-id=3D"7e9baf59-d439-49aa-a353-67a31c22ef60">n/a&nbsp;</p>
+</td>
+<td data-local-id=3D"d6fa7d96-97dc-47dc-af92-116a85ccece2" class=3D"conflue=
+nceTd">
+<p local-id=3D"b9b10ed9-b50d-4706-924b-6861c5567be2">10.0.0.0/8, 172.16.0.0=
+/12, 192.168.0.0/16&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"8b47afc8-36fa-4fbc-b8e2-6255711a12c7">
+<td rowspan=3D"2" data-local-id=3D"4748c3d8-419d-4a8e-9523-e6dea09f1ffd" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"c8c5c506-8ab2-4363-be2d-d50bf7ff18d0">TimeService NTP&nbsp;<=
+/p>
+</td>
+<td data-local-id=3D"54a7469d-6294-4524-a013-fc7ad6371466" class=3D"conflue=
+nceTd">
+<p local-id=3D"0f417cf3-e04f-4d5a-8001-d73b0afaa47d">&nbsp;</p>
+</td>
+<td data-local-id=3D"d794ea26-b656-4e24-83ba-bdd954194e67" class=3D"conflue=
+nceTd">
+<p local-id=3D"8330df10-d359-4102-8dfc-963eec4b80a9">&nbsp;</p>
+</td>
+<td rowspan=3D"2" data-local-id=3D"d29d15a3-4f1f-4eff-95a3-6baa9fe882c8" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"5c912aea-a884-4637-8d50-9778987634f2">TCP, UDP&nbsp;</p>
+</td>
+<td rowspan=3D"2" data-local-id=3D"c846b522-ee4c-4994-9642-afad3fc6ae5f" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"472f190c-d26e-4b82-82a8-5c488860b15f">123&nbsp;</p>
+</td>
+<td data-local-id=3D"7ac74cfe-5534-4b9d-9ce5-4c49edcdc9a2" class=3D"conflue=
+nceTd">
+<p local-id=3D"92071e69-01b3-4977-973f-e824dd9a7ba9">ptbtime1.ptb.de ptbtim=
+e2.ptb.de ptbtime3.ptb.de time.windows.com&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"ce88b4cf-b95b-43ea-b801-95eb62c555bd">
+<td data-local-id=3D"5816811f-6569-4f6f-af99-0674343e155a" class=3D"conflue=
+nceTd">
+<p local-id=3D"5913c9e2-8b4d-4195-8307-0c557c817d9b">&nbsp;</p>
+</td>
+<td data-local-id=3D"bdcb37d8-6e26-453b-b05f-8c703fe0258b" class=3D"conflue=
+nceTd">
+<p local-id=3D"e3a0406a-e962-45f5-880f-ebcfd110c9a0">&nbsp;</p>
+</td>
+<td data-local-id=3D"d97e4226-70fb-4dc3-9e7e-3ce9b94382c5" class=3D"conflue=
+nceTd">
+<p local-id=3D"0fd5bad2-579e-41bb-95e0-af9fe0f8c79a">europe.pool.ntp.org 3.=
+europe.pool.ntp.org 2.europe.pool.ntp.org 1.europe.pool.ntp.org 0.europe.po=
+ol.ntp.org</p>
+</td>
+</tr>
+<tr data-local-id=3D"82ffd464-7f82-499b-a6ea-c2cb78d3db1a">
+<td data-local-id=3D"807d9d90-b262-45de-bf5f-06a0c282c8f7" class=3D"conflue=
+nceTd">
+<p local-id=3D"67cdc0bf-9d00-4fc7-b7ba-5442ed417d73">DNS&nbsp;</p>
+</td>
+<td data-local-id=3D"d9b8722f-9265-4c8a-a555-5a83a446f9da" class=3D"conflue=
+nceTd">
+<p local-id=3D"224076d5-1d74-41f3-9644-3425a34394ef">&nbsp;</p>
+</td>
+<td data-local-id=3D"2259c1ae-0f8a-4079-aa9b-8437c8888834" class=3D"conflue=
+nceTd">
+<p local-id=3D"5795d0f5-1260-44be-82f4-70ab04678126">&nbsp;</p>
+</td>
+<td data-local-id=3D"03012f7e-57e0-41d2-a2f1-7f5338acc7fd" class=3D"conflue=
+nceTd">
+<p local-id=3D"6221c5a5-7dc5-49f2-9c73-026225e4d89e">TCP, UDP&nbsp;</p>
+</td>
+<td data-local-id=3D"70e4968d-5532-4860-aead-4ac95f5603ce" class=3D"conflue=
+nceTd">
+<p local-id=3D"5d6cc888-2990-43c6-87c8-becd475fb3e9">53&nbsp;</p>
+</td>
+<td data-local-id=3D"9c690735-002d-4e4c-a56c-943b1979342e" class=3D"conflue=
+nceTd">
+<p local-id=3D"c5c1ce8a-4a50-40a7-bca8-52ff7b0ed6d6">10.48.4.0/27&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"5db388ed-648f-4af3-8b06-d48585a8a6d7">
+<td data-local-id=3D"421651dc-ea23-4958-a39a-4533ee23cd88" class=3D"conflue=
+nceTd">
+<p local-id=3D"4c394ab2-c700-4947-a34b-17a25e45b6fa">Azure KMS Server&nbsp;=
+</p>
+</td>
+<td data-local-id=3D"42ecf0f5-1560-4d79-a465-4a67ef40d29a" class=3D"conflue=
+nceTd">
+<p local-id=3D"a15bf629-8bff-45d0-9836-dd807aae3536">&nbsp;</p>
+</td>
+<td data-local-id=3D"f55fd703-41e4-4946-9843-852fe92519d8" class=3D"conflue=
+nceTd">
+<p local-id=3D"5e0dabef-38bf-4048-bb13-616f1f8e49e0">&nbsp;</p>
+</td>
+<td data-local-id=3D"b0c2b377-779c-4d13-9baa-703b362ec2b0" class=3D"conflue=
+nceTd">
+<p local-id=3D"8b1a0519-cbd0-4783-bea8-1e60f38c5dd1">TCP&nbsp;</p>
+</td>
+<td data-local-id=3D"af3c2202-9d65-4ee2-84a2-25a114dfbc49" class=3D"conflue=
+nceTd">
+<p local-id=3D"dcae7ba6-e289-46d5-91ea-531140b886ee">1688&nbsp;</p>
+</td>
+<td data-local-id=3D"4d368f3b-8966-4062-9d3f-d49dced4cc0b" class=3D"conflue=
+nceTd">
+<p local-id=3D"ca0d0d26-dad3-4fb4-9d85-8eae39895587">23.102.135.246&nbsp;</=
+p>
+</td>
+</tr>
+<tr data-local-id=3D"c863453a-953a-4b06-bda0-73d5af79c49f">
+<td data-local-id=3D"ae601887-b9f0-4ee4-9f10-ec3ebe1a3572" class=3D"conflue=
+nceTd">
+<p local-id=3D"8a228ec7-87fe-46e9-8f7b-26a22e55884a">Update repositories Ub=
+untu&nbsp;</p>
+</td>
+<td data-local-id=3D"2836e62e-37b2-4b5e-aedf-b3a63476066a" class=3D"conflue=
+nceTd">
+<p local-id=3D"3d42d2ae-96e7-4368-9ab7-fef185112cad">&nbsp;</p>
+</td>
+<td data-local-id=3D"43f9a71b-f489-4413-9c54-77d93b7b4716" class=3D"conflue=
+nceTd">
+<p local-id=3D"168269cd-d710-492d-9261-f914b15f794b">&nbsp;</p>
+</td>
+<td data-local-id=3D"bebe014a-3867-4a2e-a422-5400f3b5ca61" class=3D"conflue=
+nceTd">
+<p local-id=3D"0b7be527-df47-45fc-87c1-94e68cb28600">HTTP, HTTPS&nbsp;</p>
+</td>
+<td data-local-id=3D"a8b55352-0e47-4ecd-9bed-ee456834d133" class=3D"conflue=
+nceTd">
+<p local-id=3D"8a1a881f-8907-483a-a398-f6f2cb622275">80, 443&nbsp;</p>
+</td>
+<td data-local-id=3D"d1ddaf8e-54a0-44fd-873e-1a98535e6d80" class=3D"conflue=
+nceTd">
+<p local-id=3D"f0528aee-4feb-4d6e-9409-c8b12e5e733a">*.ubuntu.com</p>
+<p local-id=3D"fed9a7d3-45f9-4214-93c4-e742f90578c3">ubuntu.com &nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"5d9383ea-9ab1-4bb3-ab1e-39f967772894">
+<td data-local-id=3D"152933a2-e18a-4aea-88c3-60e4f7a19697" class=3D"conflue=
+nceTd">
+<p local-id=3D"b81bd48a-7a2a-4292-80b9-433e79b1d9fd">Windows Update&nbsp;</=
+p>
+</td>
+<td data-local-id=3D"dea798b3-f2c9-4171-9f41-a2e9e30f7efb" class=3D"conflue=
+nceTd">
+<p local-id=3D"47284212-8e17-46a6-88a1-ff3077976212">&nbsp;</p>
+</td>
+<td data-local-id=3D"41d65208-dd68-4f2d-8009-2b89a6e0660b" class=3D"conflue=
+nceTd">
+<p local-id=3D"32b594e4-6147-434c-a0e0-86917d3c4c23">&nbsp;</p>
+</td>
+<td data-local-id=3D"1bd8ff10-f0ea-4cda-a149-3461481e0af7" class=3D"conflue=
+nceTd">
+<p local-id=3D"e153b012-c9d9-4547-b6ed-3c79c4c2e32e">HTTP, HTTPS&nbsp;</p>
+</td>
+<td data-local-id=3D"bbe78cc4-de4f-4f43-8586-98f9507577e8" class=3D"conflue=
+nceTd">
+<p local-id=3D"6971f16c-e04e-4163-81c7-7597923378ea">80, 443&nbsp;</p>
+</td>
+<td data-local-id=3D"2180f5fc-0013-4620-a8c5-2c3f2ad07638" class=3D"conflue=
+nceTd">
+<p local-id=3D"99b3b9de-1c06-4032-a4d6-af2cdfbce18f">Windows Update&nbsp;</=
+p>
+</td>
+</tr>
+<tr data-local-id=3D"20af9b25-10f0-4b72-849f-819e8db8c570">
+<td data-local-id=3D"465c9060-a688-4ac9-ae45-ccd99609ad58" class=3D"conflue=
+nceTd">
+<p local-id=3D"1fca2bf5-2dcb-40fb-8c63-4fce06ac1c65">Update repositories Ce=
+ntOs&nbsp;</p>
+</td>
+<td data-local-id=3D"6eda1a9b-f2ee-4399-900d-a9e0f67bfd69" class=3D"conflue=
+nceTd">
+<p local-id=3D"4af0ee4f-1c63-44b9-9dc6-0b6bdd0f4812">&nbsp;</p>
+</td>
+<td data-local-id=3D"c144ad15-a027-47a6-a0cc-91218e25ba16" class=3D"conflue=
+nceTd">
+<p local-id=3D"f84fe351-631a-4c94-801d-0e44b6477be6">&nbsp;</p>
+</td>
+<td data-local-id=3D"8bfc1ad1-1bd2-400c-97a4-1d70d92d95f8" class=3D"conflue=
+nceTd">
+<p local-id=3D"ed64248b-d97b-47b5-b242-b27ab78e12ee">HTTP, HTTPS&nbsp;</p>
+</td>
+<td data-local-id=3D"ecaaa5c0-6f09-4ade-9fbe-78168729cfef" class=3D"conflue=
+nceTd">
+<p local-id=3D"b149a7d7-3427-43d1-8dea-06e72855269e">80, 443&nbsp;</p>
+</td>
+<td data-local-id=3D"4ee2ff53-38f7-4526-a356-438d8aaa0c78" class=3D"conflue=
+nceTd">
+<p local-id=3D"43b8fd53-00bb-4e56-b832-67969a403be4">olcentgbl.trafficmanag=
+er.net&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"0fbd8b62-28f4-4050-a962-fe14c563dd91">
+<td rowspan=3D"2" data-local-id=3D"1709fd71-e582-482e-aa30-b7e727b04d69" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"1edb801a-7be8-4a29-8299-093db96ce87e">Update repositories De=
+bian&nbsp;</p>
+</td>
+<td data-local-id=3D"94021b1f-413f-4254-8a02-1e9f3d346057" class=3D"conflue=
+nceTd">
+<p local-id=3D"d57a7ae7-11c4-48b6-9523-d4c826e38747">&nbsp;</p>
+</td>
+<td data-local-id=3D"a7543fa7-2668-47e6-ae4f-0ff5e95d3a5e" class=3D"conflue=
+nceTd">
+<p local-id=3D"97cc024f-6864-4143-9ffd-40a781668959">&nbsp;</p>
+</td>
+<td rowspan=3D"2" data-local-id=3D"2fe1aeef-4ffa-43d3-891e-d75389a9de3d" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"d6f45cda-1f0f-48a1-b491-b2bd1275cd5e">HTTP, HTTPS&nbsp;</p>
+</td>
+<td rowspan=3D"2" data-local-id=3D"335ca707-0501-41fd-829b-1c017c621192" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"92c730f1-5865-4846-bc0e-ec38ee694e30">80, 443&nbsp;</p>
+</td>
+<td data-local-id=3D"3a5662db-3c52-40cb-b595-9c299be0054f" class=3D"conflue=
+nceTd">
+<p local-id=3D"51d6a56a-20bb-4b4e-bb91-07442262efb4">*.debian-archive.traff=
+icmanager.net,&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"74f48c69-3a06-4787-bb75-8eaa8830e5f2">
+<td data-local-id=3D"95b28eb4-aae7-4e99-a83a-5da2f2cda88b" class=3D"conflue=
+nceTd">
+<p local-id=3D"0f1a74e9-b61a-4022-a2b8-c7913948c175">&nbsp;</p>
+</td>
+<td data-local-id=3D"5d37b431-d4d4-4cd1-af60-0191dd3e93b5" class=3D"conflue=
+nceTd">
+<p local-id=3D"f6a7b14c-4c5e-4d7d-99bc-3499ab0fc8eb">&nbsp;</p>
+</td>
+<td data-local-id=3D"735ed320-7006-4088-be42-638f21f80980" class=3D"conflue=
+nceTd">
+<p local-id=3D"7dcf3b53-b179-463a-8f38-a0807fc35da9">debian-archive.traffic=
+manager.net&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"2a38a842-6017-48a6-8975-61ac957ccb38">
+<td data-local-id=3D"91dd08a3-d4a2-4d0f-a995-6b86b52efc82" class=3D"conflue=
+nceTd">
+<p local-id=3D"feb620df-741c-46ce-b6b7-e38a296b1d25">Customer Website (to t=
+est connectivity)&nbsp;</p>
+</td>
+<td data-local-id=3D"ac84cd8b-c348-4fd2-a5c9-94631a35b56a" class=3D"conflue=
+nceTd">
+<p local-id=3D"a39be605-97c0-43b0-83d5-23cc70363c6b">&nbsp;</p>
+</td>
+<td data-local-id=3D"1b10b302-ad7a-41dd-bb74-5eb91e9165c9" class=3D"conflue=
+nceTd">
+<p local-id=3D"3bf90889-bf25-42fa-9bd0-6e0faa3dbef3">&nbsp;</p>
+</td>
+<td data-local-id=3D"7d8fbaff-8a1d-4a74-9d9e-c2b68a0aecc4" class=3D"conflue=
+nceTd">
+<p local-id=3D"37a05cf0-061a-4684-afe4-1c144cbbf32f">HTTP, HTTPS&nbsp;</p>
+</td>
+<td data-local-id=3D"d091e8cc-03ad-48dc-9ef7-17b3294f2ac7" class=3D"conflue=
+nceTd">
+<p local-id=3D"db471d1c-11a1-43bb-83cd-0d5040938447">80, 443&nbsp;</p>
+</td>
+<td data-local-id=3D"0266e565-ae06-41b8-b3d7-a42702cc05ae" class=3D"conflue=
+nceTd">
+<p local-id=3D"12ce94e0-faaf-4f3f-a5ff-63eb732e56e3">*customer.com&nbsp;</p=
+>
+</td>
+</tr>
+<tr data-local-id=3D"1a3ecd2b-6387-4d2d-adaa-f18b6e4c7f28">
+<td rowspan=3D"8" data-local-id=3D"48f30545-535f-414f-9a4f-ec69988d10ff" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"daa7fbee-5d3e-4afd-a46b-0ee04ea48432">Office Activation&nbsp=
+;</p>
+</td>
+<td data-local-id=3D"cea6f1a2-df2b-46b0-8b83-a87609cbf4ad" class=3D"conflue=
+nceTd">
+<p local-id=3D"7a0e2a4e-6f31-4b37-bd6a-660c6a728ce8">&nbsp;</p>
+</td>
+<td data-local-id=3D"1e58bece-27fe-4c60-8efc-c376c13184f2" class=3D"conflue=
+nceTd">
+<p local-id=3D"9d8ed07a-8597-491f-8986-66a2c1efb707">&nbsp;</p>
+</td>
+<td rowspan=3D"8" data-local-id=3D"9a7d482f-eb33-4bed-ae57-6b942248866b" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"42ac5cba-6ff6-490b-b5e4-0a613ae2f3c1">HTTP, HTTPS&nbsp;</p>
+</td>
+<td rowspan=3D"8" data-local-id=3D"8af612c0-2f8e-470d-9158-20ea223d7f3c" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"d37ede55-6e98-4c8d-8e80-eb64198046ea">80, 443&nbsp;</p>
+</td>
+<td data-local-id=3D"c2376405-f694-495a-8cd0-1b3b587794fc" class=3D"conflue=
+nceTd">
+<p local-id=3D"9a2b6d1f-8e29-4a1b-b7f1-b3544aeaad11">ols.officeapps.live.co=
+m,&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"ed962713-fd8a-48a6-a2fe-cc34311f8206">
+<td data-local-id=3D"143920ae-07a7-4d6d-8235-197696376106" class=3D"conflue=
+nceTd">
+<p local-id=3D"f77e5780-f97a-4f45-8927-388501263e12"></p>
+</td>
+<td data-local-id=3D"6a5e3c44-64cd-4fef-8d75-68c42d528f43" class=3D"conflue=
+nceTd">
+<p local-id=3D"92ee4268-7176-4bb2-842d-e351359c33cd"></p>
+</td>
+<td data-local-id=3D"f478c618-d010-4945-b983-523607539953" class=3D"conflue=
+nceTd">
+<p local-id=3D"62bcdcdd-0a73-42f1-aeed-c709921d61d1">crl.microsoft.com,&nbs=
+p;</p>
+</td>
+</tr>
+<tr data-local-id=3D"58891d6c-8af6-45de-ae95-884ca8ecb516">
+<td data-local-id=3D"00f14351-523b-48d4-b7c2-91279e88666d" class=3D"conflue=
+nceTd">
+<p local-id=3D"d2693064-9c17-4818-bf71-9ffd0c3d6c32"></p>
+</td>
+<td data-local-id=3D"b656c1db-e992-49b8-8c01-baa2560d7bdf" class=3D"conflue=
+nceTd">
+<p local-id=3D"b7341b55-de81-445e-a232-8a6754d26a52"></p>
+</td>
+<td data-local-id=3D"1d1b7a35-8f72-4791-909d-2c0e56067d08" class=3D"conflue=
+nceTd">
+<p local-id=3D"8783f927-9d80-4505-b541-9a15de1f83a6">activation.sls.microso=
+ft.com,&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"848104ea-bc20-4887-a0e2-3182d44f044c">
+<td data-local-id=3D"e0d0fecc-c804-477b-888d-e69483be2ecb" class=3D"conflue=
+nceTd">
+<p local-id=3D"1e5c5bd2-941e-4ed7-8fac-55a37d217709"></p>
+</td>
+<td data-local-id=3D"92dd83e0-c679-4dd1-bd4f-54bba5ba29db" class=3D"conflue=
+nceTd">
+<p local-id=3D"a85f4464-cf2a-42db-97b4-36598413c0e6"></p>
+</td>
+<td data-local-id=3D"a1644d78-9384-427b-a318-30404d52a614" class=3D"conflue=
+nceTd">
+<p local-id=3D"a10d875d-7909-4edb-b149-6c60ce1a9162">officecdn.microsoft.co=
+m,&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"b167b757-44b2-40bd-b2ec-54931e6241b7">
+<td data-local-id=3D"a8c2761b-0ffd-43fb-8322-4d6017e37200" class=3D"conflue=
+nceTd">
+<p local-id=3D"a3321214-1627-4ee5-a41d-b03b504c5557"></p>
+</td>
+<td data-local-id=3D"0be93231-b775-4b52-a6a8-61ed181d875c" class=3D"conflue=
+nceTd">
+<p local-id=3D"733914e7-cec1-4133-b613-482f9f49a6b4"></p>
+</td>
+<td data-local-id=3D"0bb90fe5-83c3-4f1c-978e-70ccfcd7efe3" class=3D"conflue=
+nceTd">
+<p local-id=3D"0ef2ff99-449c-4a88-a7c2-ca7de16fce8e">office15client.microso=
+ft.com,&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"325edd54-a86b-47f3-ba86-67b8b9efb6e4">
+<td data-local-id=3D"961fa857-f8d8-41e6-9a17-e93226740394" class=3D"conflue=
+nceTd">
+<p local-id=3D"6aec890e-155a-4d54-a68c-6d58ed5c9ef2"></p>
+</td>
+<td data-local-id=3D"14193065-8b9a-4c37-af59-dfa8561753c7" class=3D"conflue=
+nceTd">
+<p local-id=3D"a8f38415-943c-4394-9895-19fb923c4432"></p>
+</td>
+<td data-local-id=3D"ef6c0e92-1e70-495f-b37a-17bc31758e5c" class=3D"conflue=
+nceTd">
+<p local-id=3D"ef6c0862-1d78-4167-94a0-a1028a20ca4d">www.microsoft.com</p>
+</td>
+</tr>
+<tr data-local-id=3D"5766b5d9-57b5-4322-b44a-6b5ec20c85f5">
+<td data-local-id=3D"5d9e939f-a981-4567-829e-e12eae7d55a8" class=3D"conflue=
+nceTd">
+<p local-id=3D"5690a7e9-76b7-4339-af65-dcccae19f12d"></p>
+</td>
+<td data-local-id=3D"c50b49dd-2abb-4bd8-b866-a980660541f8" class=3D"conflue=
+nceTd">
+<p local-id=3D"14798a48-152b-462c-b695-761450cb8d66"></p>
+</td>
+<td data-local-id=3D"9c7871fc-eb24-4b13-8275-de25b604785c" class=3D"conflue=
+nceTd">
+<p local-id=3D"297e23c5-357f-4add-b9bc-ff0f49b53238">go.microsoft.com</p>
+</td>
+</tr>
+<tr data-local-id=3D"de69cb56-4de1-4560-9bdf-c272a78cdda5">
+<td data-local-id=3D"bb4a63c6-b9f8-4778-b29a-3efe94f7b107" class=3D"conflue=
+nceTd">
+<p local-id=3D"6cdbd302-bc36-401c-9482-23da61a16bef">&nbsp;</p>
+</td>
+<td data-local-id=3D"e6092e1a-b65d-40fe-b4c0-7b912967d077" class=3D"conflue=
+nceTd">
+<p local-id=3D"cb7326c6-0147-4c7f-af03-ffad249076f7">&nbsp;</p>
+</td>
+<td data-local-id=3D"00aa5cca-d5a7-4f0a-8b46-e3aa011058a6" class=3D"conflue=
+nceTd">
+<p local-id=3D"3faeb720-616d-41d3-b678-a5dd23de5bc0">odc.officeapps.live.co=
+m&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"8415aa23-b67d-474e-9a48-47b6b741b8d5">
+<td data-local-id=3D"0c35a10d-0795-41b5-8044-71e6f7cb11bd" class=3D"conflue=
+nceTd">
+<p local-id=3D"2142eec0-49f6-46f8-8515-23f3e6bc9f67">Vorwerk Corporate Netw=
+orks</p>
+</td>
+<td data-local-id=3D"9a880e91-7131-4bbf-b78d-a9aa9ec93a15" class=3D"conflue=
+nceTd">
+<p local-id=3D"8bdb429a-d75a-4a48-914e-a2ceccd3832a">10.0.0.0/8; 172.16.0.0=
+/12; 192.168.0.0/16</p>
+</td>
+<td data-local-id=3D"771de155-80a2-497c-a40f-b2a59bc485c7" class=3D"conflue=
+nceTd">
+<p local-id=3D"fb1ed341-9ae9-46d3-b1f2-f5e57de6b49d">&nbsp;</p>
+</td>
+<td data-local-id=3D"3711e7bf-ed3a-4462-bfdc-8f9d57c486ff" class=3D"conflue=
+nceTd">
+<p local-id=3D"19fe88a9-dba5-4e9b-8573-e78110a9e5a5">&nbsp;</p>
+</td>
+<td data-local-id=3D"ebb6b9c9-3b49-49e3-89c7-8694eda375bf" class=3D"conflue=
+nceTd">
+<p local-id=3D"309da564-dc25-45dd-b869-2480f9bc779c">&nbsp;</p>
+</td>
+<td data-local-id=3D"88ed9d0f-60b8-4bd9-89d5-49ae22448e4e" class=3D"conflue=
+nceTd">
+<p local-id=3D"021b9ad3-eabc-4775-afce-277246c51c61">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"6f72d754-76eb-4e3d-b3d8-bf0438b6632b"></p>
+    </div>
+</body>
+</html>
+------=_Part_58_610361842.1794484647570--

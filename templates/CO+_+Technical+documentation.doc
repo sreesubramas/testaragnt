@@ -1,0 +1,585 @@
+Date: Thu, 12 Nov 2026 11:57:35 +0000 (UTC)
+Message-ID: <465857740.51.1794484655038@fe05717ceab3>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_50_974663202.1794484655038"
+
+------=_Part_50_974663202.1794484655038
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>CO | Technical documentation</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>CO | Technical documentation</h1>
+    <div class=3D"Section1">
+        <div class=3D"confluence-information-macro confluence-information-m=
+acro-note">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
+rmation-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"6f9a5b63-cfeb-4b21-a1eb-e9dde2f47c2a">Under construction</p>
+</div>
+</div>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"67d465b0-22c7-4977-97bf-21a39b90a38f">Technical Documentatio=
+n will be linked here</p>
+</div>
+</div>
+<h2 local-id=3D"35cc4697-1f89-4592-977c-0c3b9add2361" id=3D"CO|Technicaldoc=
+umentation-TechnicalArchitecture">Technical Architecture</h2>
+<p local-id=3D"91a1203a-e2eb-4c48-b7ca-26698df7fa76"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1691" data-layout=3D"center" data-local-id=3D"b7=
+f94778-b1a8-4c0e-93a9-00b6d1bf6bb6" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 560.0px;">
+<col style=3D"width: 568.0px;">
+<col style=3D"width: 563.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"90630887-73eb-4872-b8b1-5e2e4b4710a6">
+<th data-local-id=3D"a26d851c-0ec6-4706-8207-2e66c28591df" class=3D"conflue=
+nceTh">
+<p local-id=3D"c559c553-dc43-4645-abe4-37adea2167bc"><strong>Question </str=
+ong></p>
+</th>
+<th data-local-id=3D"47022a31-4666-4171-bb31-3a6e49291aa3" class=3D"conflue=
+nceTh">
+<p local-id=3D"b75bab23-03c1-480c-8816-daf298b8ade7"><strong>Answer</strong=
+></p>
+</th>
+<th data-local-id=3D"a34fe3a1-365a-4b9f-8e3b-4546ae5a76c8" class=3D"conflue=
+nceTh">
+<p local-id=3D"3e48b966-40a3-47c8-b7bf-24f7ad8ae23c"><strong>Notes</strong>=
+</p>
+</th>
+</tr>
+<tr data-local-id=3D"4eae81a9-adf9-491f-b7c6-c6bacd7897eb">
+<td data-local-id=3D"6043e19a-9b0f-4863-aed3-37490ef27739" class=3D"conflue=
+nceTd">
+<p local-id=3D"23625a62-7b7e-49de-bf52-1eb1c4ceb13c">Does this workload req=
+uire one or more Virtual machine(s)?</p>
+</td>
+<td data-local-id=3D"231cbb18-2a28-4e29-94d1-6168c4488150" class=3D"conflue=
+nceTd">
+<p local-id=3D"303d4c1e-6162-47cd-b458-e88e6ac8e15c"></p>
+</td>
+<td data-local-id=3D"fcbb7192-a6dc-4c8c-8ac8-8e396fb09c61" class=3D"conflue=
+nceTd">
+<p local-id=3D"a27344a3-e8b7-4829-a7cc-7232bce17429">Yes / No - Number</p>
+</td>
+</tr>
+<tr data-local-id=3D"6b139afe-db98-4d6e-bb3c-be4d80b52cd7">
+<td data-local-id=3D"32d50e8d-1918-4878-855d-39f0a36d37bf" class=3D"conflue=
+nceTd">
+<p local-id=3D"9f0c983a-2df2-47fa-9966-7c5596a709e1">If Yes, then please le=
+t us know if you need Azure Native (Entra AD only) or OnPremise AD (Domain =
+joined machine which is visible in both Azure Entra and OnPremise AD)?</p>
+</td>
+<td data-local-id=3D"05577453-60b4-4169-89fd-418196114f7b" class=3D"conflue=
+nceTd">
+<p local-id=3D"16ee2c9a-7735-492c-aa2b-d03b3c94cf09"></p>
+</td>
+<td data-local-id=3D"c7e8e706-56e4-4c10-a04f-2a8f3646a88e" class=3D"conflue=
+nceTd">
+<p local-id=3D"b7f1570e-72ff-4956-b920-ce9a716de6f2">Azure Entra AD only (o=
+r) Domain Joined through On premise AD</p>
+</td>
+</tr>
+<tr data-local-id=3D"4250db64-68ae-4123-85ec-01a52abdd7c4">
+<td data-local-id=3D"24fa9228-5ca2-4588-b06c-f2f785f10790" class=3D"conflue=
+nceTd">
+<p local-id=3D"99bc6082-395b-4cb7-ac09-46b12764b169">Interfaces to other ap=
+plications or systems?</p>
+</td>
+<td data-local-id=3D"92f5d3eb-2e78-4116-9a74-5813e9dbf3c3" class=3D"conflue=
+nceTd">
+<p local-id=3D"3e367a56-c797-458e-9bff-d575d2474016"></p>
+</td>
+<td data-local-id=3D"108f6d87-d9ae-46c1-8e65-a77acceeb022" class=3D"conflue=
+nceTd">
+<p local-id=3D"c128e27a-32a4-4376-bb91-c705c7e20678">Source, Target, Data t=
+ype, Connection type, Connection interval, Port , Protocol</p>
+<p local-id=3D"ba647981-0427-42a5-a804-74294cee6e3f">If possible attach the=
+ entire interface definition files.</p>
+</td>
+</tr>
+<tr data-local-id=3D"bbf354fd-d4df-43c0-9087-77b85f21d4df">
+<td data-local-id=3D"44da8214-d202-4ed2-86b8-97c27e544356" class=3D"conflue=
+nceTd">
+<p local-id=3D"6cfc8552-e612-43f3-9647-6b449627ddd1">What CI/CD Platform do=
+ you use?</p>
+</td>
+<td data-local-id=3D"dbd1e1c8-7325-4ad4-8d0f-595e7da7894c" class=3D"conflue=
+nceTd">
+<p local-id=3D"00cf89f1-4f20-4718-a350-d930a08fbeda"></p>
+</td>
+<td data-local-id=3D"c77355b1-69c2-4532-abec-78eb51551525" class=3D"conflue=
+nceTd">
+<p local-id=3D"67c1f607-8acc-4216-972c-9f9000568045">Azure DevOps, GitHub, =
+GitLab etc.</p>
+<p local-id=3D"92fa9932-9376-4d1a-82bb-9bdae259292d">Key SPOC for Azure Dev=
+Ops &amp; GitHub Shared IT organization - Michael Sliwak (Cloud Architect -=
+ M365 Services)</p>
+</td>
+</tr>
+<tr data-local-id=3D"e1782f9f-e608-4d35-9c8d-e3e127cff5a0">
+<td data-local-id=3D"5eb85339-e1fc-489b-862a-41b1c5a54510" class=3D"conflue=
+nceTd">
+<p local-id=3D"c61532d1-2d5d-4ace-be7f-1c7b3ab15aaf">Do you already have li=
+cense and the number of users requiring the DevOps platform?</p>
+</td>
+<td data-local-id=3D"d417d503-0482-4d6a-a892-8f898f284f8f" class=3D"conflue=
+nceTd">
+<p local-id=3D"1548fd62-3aa4-4d66-b691-042e2fd1029d"></p>
+</td>
+<td data-local-id=3D"2311bd45-a31b-45c5-ad4a-d623143f2de8" class=3D"conflue=
+nceTd">
+<p local-id=3D"c034ab2a-22ba-46d6-a55f-65eac3a1e949"></p>
+</td>
+</tr>
+<tr data-local-id=3D"4a528639-30fa-403a-94aa-bf3bd2b6e58c">
+<td data-local-id=3D"b5d58371-ff1c-4236-9253-b47fc97ef4a5" class=3D"conflue=
+nceTd">
+<p local-id=3D"090ef7a9-0011-432f-aad7-5a14d800d637">Components - how many =
+tiers?</p>
+</td>
+<td data-local-id=3D"937c5da6-c6b9-45fa-a71f-dbda8d4cfca8" class=3D"conflue=
+nceTd">
+<p local-id=3D"4cfb5978-7720-4909-bb6b-5f6771a2c239"></p>
+</td>
+<td data-local-id=3D"819e33a3-0d4a-4827-80e7-ff51a0d3af23" class=3D"conflue=
+nceTd">
+<p local-id=3D"65f304e9-3d4e-4abd-b02b-edb4779d8641">[e.g.: application ser=
+ver, database server]</p>
+</td>
+</tr>
+<tr data-local-id=3D"c8fb71e9-19ad-4e08-9427-ea07b1773d8c">
+<td data-local-id=3D"52a6a79c-7712-49f2-9326-0347443aa498" class=3D"conflue=
+nceTd">
+<p local-id=3D"bb6dd77a-2d93-42ff-b3b3-8bd49ee853d6">Operating system for t=
+he components?</p>
+</td>
+<td data-local-id=3D"37d8761e-67ab-4974-a5a3-9da64fc03e3c" class=3D"conflue=
+nceTd">
+<p local-id=3D"1db8934b-c6ee-4ff5-802c-d727f72145cf"></p>
+</td>
+<td data-local-id=3D"cfb99cb2-50d4-4f68-a577-a97e1fbcb8b8" class=3D"conflue=
+nceTd">
+<p local-id=3D"a58369eb-4d55-4f68-946f-65b4b274fdb9"></p>
+</td>
+</tr>
+<tr data-local-id=3D"69eb383a-f4f4-4046-989f-802876b25d65">
+<td data-local-id=3D"4c5d2cb5-307e-4bea-84e4-f7ea86f7468c" class=3D"conflue=
+nceTd">
+<p local-id=3D"0442016a-e75f-4ecc-adac-51e2b75d7720">Application architectu=
+re description</p>
+</td>
+<td data-local-id=3D"6fbb01fc-42e4-4ec9-8b83-67f600839f05" class=3D"conflue=
+nceTd">
+<p local-id=3D"1fd2a7ea-3531-4f67-bd60-97fc9a03910e"></p>
+</td>
+<td data-local-id=3D"b84ddcc5-b28b-4ef8-a942-46c16050ffaf" class=3D"conflue=
+nceTd">
+<p local-id=3D"f2ff0be4-f971-430a-bea9-ba14f568c448">Link Solution Architec=
+ture if possible</p>
+</td>
+</tr>
+<tr data-local-id=3D"de74731d-34a8-4aa5-8ac4-514298c2540c">
+<td data-local-id=3D"9af7897f-0fb3-4149-9c94-5dd33b2e70d9" class=3D"conflue=
+nceTd">
+<p local-id=3D"fd2ecd24-2954-46f8-8f23-389f683ec2ac">Software deployment me=
+thod</p>
+</td>
+<td data-local-id=3D"63cb204a-ca86-4e30-82c9-21fc04441ddb" class=3D"conflue=
+nceTd">
+<p local-id=3D"a8ba2d50-d285-4bb1-a2a6-3eb8ad68e52a"></p>
+</td>
+<td data-local-id=3D"69a61530-9b45-40dd-88e5-75a0cfae6aee" class=3D"conflue=
+nceTd">
+<p local-id=3D"4dfc461e-22ee-4838-a12f-20132fd2f4dc">(e.g. code pipelines, =
+frequencies , release management setup etc)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 local-id=3D"e16ce5c1-a2a5-4c8d-bf4b-bcc0e8aecdab" id=3D"CO|Technicaldoc=
+umentation-TechnicalArchitecture-SAPspecific">Technical Architecture - SAP =
+specific</h2>
+<p local-id=3D"46b374fc-2f4c-4b00-b7de-e5d993cc4890"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1691" data-layout=3D"center" data-local-id=3D"9a=
+c5c507-b8f0-4385-9f85-fe9463e632ef" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 563.0px;">
+<col style=3D"width: 565.0px;">
+<col style=3D"width: 563.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"704ba402-3973-4f3f-a025-5ad9b97e3171">
+<th data-local-id=3D"28c5e6e8-f232-4c02-a310-47539bf7e11c" class=3D"conflue=
+nceTh">
+<p local-id=3D"47c4d9f4-a1ca-4e64-ad6f-cf7b1b145b24"><strong>Question </str=
+ong></p>
+</th>
+<th data-local-id=3D"6f944a24-0b79-45d2-bbaa-7e9a3c30a07d" class=3D"conflue=
+nceTh">
+<p local-id=3D"400b2e40-b1c6-4a02-b766-bc26cb580953"><strong>Answer</strong=
+></p>
+</th>
+<th data-local-id=3D"7d876f38-3949-4064-b2aa-1b6e3ca25e83" class=3D"conflue=
+nceTh">
+<p local-id=3D"77fa174c-e4d7-4494-8cb1-82024d6a7813"><strong>Notes</strong>=
+</p>
+</th>
+</tr>
+<tr data-local-id=3D"3ad4b0d6-ec60-4858-906d-bd5eefb75370">
+<td data-local-id=3D"fbc56d41-9f83-4b85-afd2-4d5239b75439" class=3D"conflue=
+nceTd">
+<p local-id=3D"fbeb7f72-d695-487b-9dbb-6b303c0f9c43">SAP System Identifier<=
+/p>
+</td>
+<td data-local-id=3D"5b359e06-e81b-430d-8062-9ffdfb74ac5a" class=3D"conflue=
+nceTd">
+<p local-id=3D"7b89e340-a58d-42fc-a937-90f432df374e"></p>
+</td>
+<td data-local-id=3D"f834f137-521c-44b7-8a1f-34f9cd0c80a0" class=3D"conflue=
+nceTd">
+<p local-id=3D"11ecc787-4add-4e6d-91ab-26c198292d35"></p>
+</td>
+</tr>
+<tr data-local-id=3D"ec9f98a3-ab88-4855-9fb1-07a8a5d54b81">
+<td data-local-id=3D"d6709553-4bdf-467e-8e2d-44ec80ae3ea0" class=3D"conflue=
+nceTd">
+<p local-id=3D"def6ea79-c5bc-43d5-875c-0d11b1939f27">System Design Requeste=
+d (Options: DEV, QA, PRD, SBX, TRG)</p>
+</td>
+<td data-local-id=3D"1c967cb6-d0b0-451f-afe7-8add9b3bd248" class=3D"conflue=
+nceTd">
+<p local-id=3D"85aa74bb-4ab5-42e9-b286-26df83d8aec2"></p>
+</td>
+<td data-local-id=3D"cec41d9a-effe-47b2-b357-a0d082d0e82e" class=3D"conflue=
+nceTd">
+<p local-id=3D"6a1d8ef8-90a6-43c3-bed0-e7c4fd9a8acb"></p>
+</td>
+</tr>
+<tr data-local-id=3D"e08e10a1-cbad-4209-b484-cf52e31098fe">
+<td data-local-id=3D"ec7525a9-62eb-4850-8ed9-984ecff44d00" class=3D"conflue=
+nceTd">
+<p local-id=3D"26bcb509-780e-44ef-9315-37ec7bf49146">Client Design Requeste=
+d</p>
+</td>
+<td data-local-id=3D"ab11af5f-e252-4ce0-b168-1fda8a4a2d0c" class=3D"conflue=
+nceTd">
+<p local-id=3D"8ed39b1e-21ac-450c-9a6d-80312ef95110"></p>
+</td>
+<td data-local-id=3D"7b10c0cd-1d2d-436d-b7a1-396a7fd65e63" class=3D"conflue=
+nceTd">
+<p local-id=3D"8de10e2c-b23e-49f5-9d2f-808ca5ddf58b"></p>
+</td>
+</tr>
+<tr data-local-id=3D"15085930-1a3a-4a9f-917c-bf7e05d9c132">
+<td data-local-id=3D"ea6bbd66-7e25-4a3d-a0d3-453009ccddc2" class=3D"conflue=
+nceTd">
+<p local-id=3D"e2281aed-4614-4eb9-ac20-a6a874a681f6">Client Copy Source req=
+uirements, Please provide Source SAP SID - Client and Profile for Copy</p>
+</td>
+<td data-local-id=3D"736588f1-1a88-4bcc-ab2f-b0a73a6aa612" class=3D"conflue=
+nceTd">
+<p local-id=3D"c558ecb3-3ed4-452a-a36e-d4adacb1f74f"></p>
+</td>
+<td data-local-id=3D"ec8211fc-a97d-4cb2-8d00-c01e7bf32263" class=3D"conflue=
+nceTd">
+<p local-id=3D"57a9f447-c3c9-4eb8-9ca4-0cbcfb6c7b0b"></p>
+</td>
+</tr>
+<tr data-local-id=3D"b57e99f3-4f8a-4b10-aa68-81949b698bfc">
+<td data-local-id=3D"f31f88f7-1e11-41db-a08a-0106bb8751b4" class=3D"conflue=
+nceTd">
+<p local-id=3D"9e7a3994-80db-4f47-a7dc-a50af5035182">Interface definition r=
+equirements - If not already supplied in Firewall Rules worksheet</p>
+</td>
+<td data-local-id=3D"93d4d1fd-c330-448c-b1d9-5d839b75023c" class=3D"conflue=
+nceTd">
+<p local-id=3D"f7d37f63-84aa-4fc5-bf9e-350adcbd56b8"></p>
+</td>
+<td data-local-id=3D"50be28d9-b8ab-4ad1-8a88-4d6f4a754a51" class=3D"conflue=
+nceTd">
+<p local-id=3D"4d601480-fb57-4d63-b103-40c016bfc8e1"></p>
+</td>
+</tr>
+<tr data-local-id=3D"62aa984b-c4c8-4e17-911e-745d2ba14d59">
+<td data-local-id=3D"12cdf544-6d28-4fb4-a501-dc415f851a2a" class=3D"conflue=
+nceTd">
+<p local-id=3D"1acaa192-bcba-4ac7-85aa-ff06fe5cefdc">Transport Design Requi=
+rements</p>
+</td>
+<td data-local-id=3D"4e806c4a-0c4e-4880-b204-349d07dc83bd" class=3D"conflue=
+nceTd">
+<p local-id=3D"47c758dd-e1bb-40fc-8bbc-b4e868bedc5e"></p>
+</td>
+<td data-local-id=3D"407b64f6-1808-492e-8af4-3ce43bbf5703" class=3D"conflue=
+nceTd">
+<p local-id=3D"a1e18ef0-9e6f-4278-a60c-d5c2f6a69f6f"></p>
+</td>
+</tr>
+<tr data-local-id=3D"01a3e2b7-3cc0-415d-ba34-bfebd137d09b">
+<td data-local-id=3D"625a1a24-f021-4f4b-88ba-6b0d1df32216" class=3D"conflue=
+nceTd">
+<p local-id=3D"9d11c889-a43b-43a8-b1e6-d2b69dfe6f29">System Copy / Backup R=
+estore Requirements</p>
+</td>
+<td data-local-id=3D"dfa0d393-56f9-42b1-a087-eebcf821bba9" class=3D"conflue=
+nceTd">
+<p local-id=3D"0cb9703d-a81b-4e10-9b44-822b62517bfc"></p>
+</td>
+<td data-local-id=3D"f0d75561-6255-4f4f-a17d-330e8767a853" class=3D"conflue=
+nceTd">
+<p local-id=3D"95dcd968-e93f-475f-a789-b74fc0feb83f"></p>
+</td>
+</tr>
+<tr data-local-id=3D"9690a8e7-8f2b-4ef5-9985-75af9e57a419">
+<td data-local-id=3D"359e364b-4450-4d48-965d-09cee32ce9f8" class=3D"conflue=
+nceTd">
+<p local-id=3D"8f7156f5-ef01-45a0-a0ed-4390fc8edd6a">User Requirements - Wh=
+ich is the Source System for User Master Refinement</p>
+</td>
+<td data-local-id=3D"e19270ba-b17b-4bb0-8f0a-0ab6bbe114b5" class=3D"conflue=
+nceTd">
+<p local-id=3D"0608bd1e-1dbf-412d-8d38-1058cc4c9e39"></p>
+</td>
+<td data-local-id=3D"af0f9bc1-f592-42e0-be0c-aa7eda293736" class=3D"conflue=
+nceTd">
+<p local-id=3D"99dbe80d-7337-453b-8a81-ebf4b4e32edf"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_50_974663202.1794484655038--

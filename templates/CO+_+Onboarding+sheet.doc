@@ -1,0 +1,1165 @@
+Date: Thu, 12 Nov 2026 11:57:20 +0000 (UTC)
+Message-ID: <540605796.29.1794484640510@21d39adfa62e>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_28_1720900624.1794484640509"
+
+------=_Part_28_1720900624.1794484640509
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>CO | Onboarding sheet</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>CO | Onboarding sheet</h1>
+    <div class=3D"Section1">
+        <div class=3D"confluence-information-macro confluence-information-m=
+acro-information">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"2d4fbf4e-3f7d-43f5-a57f-4cc794684e81">This sheet is intended=
+ for new workloads as well as for migration activities from existing enviro=
+nments.</p>
+</div>
+</div>
+<h2 local-id=3D"3e39a29e-9e1f-41e7-9c3b-c166dec6f057" id=3D"CO|Onboardingsh=
+eet-Meeting"><strong>Meeting</strong></h2>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1677" data-layout=3D"align-start" data-local-id=
+=3D"9ba67fee-aa63-4374-bbaa-fd47bf7b7f3b" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 478.0px;">
+<col style=3D"width: 1063.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"7044a3a2-bac6-480e-b0c4-152eefd23eea">
+<th data-local-id=3D"66e8d310-fb10-46df-ab04-627d64348841" class=3D"conflue=
+nceTh">
+<h2 local-id=3D"fd450c89-4234-44eb-89ea-2952c53305a8" id=3D"CO|Onboardingsh=
+eet-Date"><img class=3D"emoticon emoticon-calendar_spiral" data-emoji-id=3D=
+"1f5d3" data-emoji-shortname=3D":calendar_spiral:" data-emoji-fallback=3D"\=
+uD83D\uDDD3" src=3D"6bf7e163b3637305ae747cf5667b280a943d76670fe9952630ad883=
+21f13c5b7" width=3D"16" height=3D"16" data-emoticon-name=3D"calendar_spiral=
+" alt=3D"content.emoticon.calendar_spiral">&nbsp;Date</h2>
+</th>
+<th data-local-id=3D"e11fbd1b-3a14-4faf-8d8b-fdf1cf6a71d0" class=3D"conflue=
+nceTh">
+<h2 local-id=3D"d5b43b4e-c9a0-4896-b954-a38e78d001b5" id=3D"CO|Onboardingsh=
+eet-Participants"><img class=3D"emoticon emoticon-blue-star" data-emoji-id=
+=3D"1f465" data-emoji-shortname=3D":busts_in_silhouette:" data-emoji-fallba=
+ck=3D"\uD83D\uDC65" src=3D"e007b898783e97d3ca35087721408a36ca5b0b5fd7dbeebe=
+fa6f0997b274aa6d" width=3D"16" height=3D"16" data-emoticon-name=3D"blue-sta=
+r" alt=3D"(blue star)"> Participants</h2>
+</th>
+<th data-local-id=3D"578acafe-ca5c-45a4-8744-6b688fb596ce" class=3D"conflue=
+nceTh">
+<h2 local-id=3D"5017a87e-9917-4745-9019-007c1dc17245" id=3D"CO|Onboardingsh=
+eet-Actionitems"><img class=3D"emoticon emoticon-white-check-mark" data-emo=
+ji-id=3D"2705" data-emoji-shortname=3D":white_check_mark:" data-emoji-fallb=
+ack=3D"=E2=9C=85" src=3D"38b7e9d522369fec97b7680a0bcbf06080b2b353edae5740d9=
+7ba7a9b745aff8" width=3D"16" height=3D"16" data-emoticon-name=3D"white-chec=
+k-mark" alt=3D"content.emoticon.white-check-mark">&nbsp;Action items</h2>
+</th>
+</tr>
+<tr data-local-id=3D"36bbb2d0-99af-4dde-ad7f-9539c8b24d6f">
+<td data-local-id=3D"d41c7990-9096-442a-b19f-c7d3a163a5eb" class=3D"conflue=
+nceTd">
+<p local-id=3D"8d0d50d5-a89f-4dd5-9618-cb7360f42833"><time datetime=3D"2026=
+-01-07" class=3D"date-past">07 Jan 2026</time></p>
+</td>
+<td data-local-id=3D"47e66257-8874-4267-acf3-37d9f0cbc1ef" class=3D"conflue=
+nceTd">
+<ul local-id=3D"81fd70c5-2218-4b7d-8cf6-2cb03db842aa">
+<li local-id=3D"7099c41c-3597-41c2-98c9-4a6501d34e60">
+<p local-id=3D"50b43534-eca1-4c81-94a4-1cfafa74c7e5"><a class=3D"confluence=
+-userlink user-mention" data-account-id=3D"712020:3a9f7a8c-2dcd-464f-add3-a=
+37026a8dfe4" href=3D"https://vorwerk.atlassian.net/wiki/people/712020:3a9f7=
+a8c-2dcd-464f-add3-a37026a8dfe4?ref=3Dconfluence" target=3D"_blank" data-li=
+nked-resource-id=3D"8488878095" data-linked-resource-version=3D"1" data-lin=
+ked-resource-type=3D"userinfo" data-base-url=3D"https://vorwerk.atlassian.n=
+et/wiki">Schwarz, Jan</a></p>
+</li>
+<li local-id=3D"c6c0f096-d319-472b-9907-150ed366ac8d">
+<p local-id=3D"a896cb31-eef0-4353-80b8-8c43a76751ad"></p>
+</li>
+</ul>
+</td>
+<td data-local-id=3D"234a4614-3fcf-4cad-83ea-101db25e9659" class=3D"conflue=
+nceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"8730542441">
+<li class=3D"checked" data-inline-task-id=3D"6"><span class=3D"placeholder-=
+inline-tasks">Create Onboarding documents</span></li>
+<li class=3D"checked" data-inline-task-id=3D"7"><span class=3D"placeholder-=
+inline-tasks">Create Jira Item</span></li>
+<li class=3D"checked" data-inline-task-id=3D"9"><span class=3D"placeholder-=
+inline-tasks">Schedule Onboarding Kickoff</span></li>
+<li data-inline-task-id=3D"10"><span class=3D"placeholder-inline-tasks">Sch=
+edule Architect Kickoff</span></li>
+<li data-inline-task-id=3D"11"><span class=3D"placeholder-inline-tasks">Cre=
+ate / Link Technical documents</span></li>
+<li data-inline-task-id=3D"12"><span class=3D"placeholder-inline-tasks">Cre=
+ate Communication matrix</span></li>
+<li data-inline-task-id=3D"16"><span class=3D"placeholder-inline-tasks">Dis=
+cuss Automation / Transformation opportunities</span></li>
+<li data-inline-task-id=3D"17"><span class=3D"placeholder-inline-tasks">Req=
+uest Appzone at Service provider</span></li>
+<li data-inline-task-id=3D"18"><span class=3D"placeholder-inline-tasks">App=
+ly Vorwerk Cloud &amp; Security policies</span></li>
+<li data-inline-task-id=3D"19"><span class=3D"placeholder-inline-tasks">Rev=
+iew Appzone</span></li>
+<li data-inline-task-id=3D"13"><span class=3D"placeholder-inline-tasks">Cre=
+ate Service instances (SNOW)</span></li>
+<li data-inline-task-id=3D"14"><span class=3D"placeholder-inline-tasks">Cre=
+ate Handover documents</span></li>
+<li data-inline-task-id=3D"15"><span class=3D"placeholder-inline-tasks">Sch=
+edule Handover meeting</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr local-id=3D"fde7d6a3-cff2-4eb8-9858-be75895c0a78">
+<h2 local-id=3D"abe9f638-8670-4178-9013-68d8a7208781" id=3D"CO|Onboardingsh=
+eet-General"><strong>General</strong></h2>
+<div class=3D"plugin-tabmeta-details">
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"01=
+b4cddf-6371-44f9-9ff3-bb67d9393190" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 636.0px;">
+<col style=3D"width: 535.0px;">
+<col style=3D"width: 581.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"c804e10d-b181-4e0d-9aca-54d5d734cd42">
+<th data-local-id=3D"fe34d500-7b97-460c-8579-0f13d62f8388" class=3D"conflue=
+nceTh">
+<p local-id=3D"269ce245-9575-4099-9169-f5e610ba5f21"><strong>Name</strong><=
+/p>
+</th>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"a88d087b-6c36-4cab-b=
+eea-2832eca8cb26" class=3D"confluenceTd">
+<p local-id=3D"e83dd00f-46d0-40e5-b28a-83ef9be2094a"><strong>Input</strong>=
+</p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"a2782a53-1ac8-44f5-9=
+d2e-8f2574bdbdb9" class=3D"confluenceTd">
+<p local-id=3D"e35e3359-ab94-4f0c-8293-4dad2e430fe4"><strong>Notes</strong>=
+</p>
+</td>
+</tr>
+<tr data-local-id=3D"a8afe0f4-f5d2-4f3e-ba00-a5030ff27fb7">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"6cc46334-274f-4992-b=
+17c-74a8212cfe46" class=3D"confluenceTh">
+<p local-id=3D"5b397603-359a-4597-9ce5-76aa7af13180">BEE ID</p>
+</th>
+<td data-local-id=3D"75254213-6c2d-47fb-9659-06fa2ba55512" class=3D"conflue=
+nceTd">
+<p local-id=3D"5c988d4a-5f16-4510-a72f-3859f0e75cf3"></p>
+</td>
+<td data-local-id=3D"71e1fdfe-8cc3-4e79-bd93-d1d59e0de197" class=3D"conflue=
+nceTd">
+<p local-id=3D"e034e90b-284b-44ac-919a-8656aff869a3">BeeID is mandatory and=
+ can be requested from "Wiechel, Axel" <a class=3D"external-link" href=3D"m=
+ailto:Axel.Wiechel@vorwerk.de" rel=3D"nofollow">Axel.Wiechel@vorwerk.de</a>=
+</p>
+</td>
+</tr>
+<tr data-local-id=3D"24db7487-ded6-42dd-bc3d-d82aea80d76d">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"da82b952-507f-47fd-a=
+677-ccaa3f56eb53" class=3D"confluenceTh">
+<p local-id=3D"4e0df79f-e0eb-44df-970a-f0c7211eaa3a">SNOW ID</p>
+</th>
+<td data-local-id=3D"44a3c8ab-27c1-4263-8ae4-ce12ce0fe4d8" class=3D"conflue=
+nceTd">
+<p local-id=3D"fea45c79-401c-4130-a036-35eb51f62b74"></p>
+</td>
+<td data-local-id=3D"78e22e4b-830c-42a5-89ad-9c0fee31bada" class=3D"conflue=
+nceTd">
+<p local-id=3D"21105046-f798-457a-b57c-ce2a51f490c4">SNOW ID - Create your =
+workload request here: <a class=3D"external-link" data-card-appearance=3D"i=
+nline" href=3D"https://vornowprod.service-now.com/ithub?id=3Demp_taxonomy_t=
+opic&amp;topic_id=3Dea946a2c47616a10bc2c01d7536d43de" local-id=3D"7c5ecb64-=
+7269-4cd3-a7c6-b5ed5c9aaba8" rel=3D"nofollow">https://vornowprod.service-no=
+w.com/ithub?id=3Demp_taxonomy_topic&amp;topic_id=3Dea946a2c47616a10bc2c01d7=
+536d43de</a></p>
+</td>
+</tr>
+<tr data-local-id=3D"6adf2905-c32d-400e-a652-1f05c8550f1b">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"b29cb873-119f-40cf-8=
+4ef-0402db3e81d6" class=3D"confluenceTh">
+<p local-id=3D"4ba7383a-650a-49fc-a82f-e158da990be0">Jira ID</p>
+</th>
+<td data-local-id=3D"b2e13a2a-b97f-4799-9b0d-5b961df74de5" class=3D"conflue=
+nceTd">
+<p local-id=3D"43064c66-b62a-483c-bd6e-c319fb3944f9"></p>
+</td>
+<td data-local-id=3D"2f957e84-7e93-42ce-b642-d118262753eb" class=3D"conflue=
+nceTd">
+<p local-id=3D"dd41ae6d-cbbc-4556-ba12-6030c1339376">Jira ID - Relevant for=
+ Backbone Sprint planning</p>
+</td>
+</tr>
+<tr data-local-id=3D"1d17b403-53b0-4bdf-b67e-7ba4f356aa31">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"d91f5c26-fa7b-4939-b=
+f8a-ef0a657fc610" class=3D"confluenceTh">
+<p local-id=3D"39af9582-bb53-450c-b3f8-599f9f2b71ef">Application Name</p>
+</th>
+<td data-local-id=3D"b9250887-d734-4d4e-b49f-674aa0dbd147" class=3D"conflue=
+nceTd">
+<p local-id=3D"6ddb3159-a8ab-414b-9085-49413b5eb96f"></p>
+</td>
+<td data-local-id=3D"37bad11d-59fe-4e73-b39e-403fcc0f71fa" class=3D"conflue=
+nceTd">
+<p local-id=3D"b645ab5d-0535-4f39-96ee-670f0d7989a6">Abbreviation - Full Na=
+me</p>
+</td>
+</tr>
+<tr data-local-id=3D"1ce2b5df-2da1-47f9-a37b-84abf3a8e67c">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"062b0ed7-73c3-4392-a=
+d12-5c73c7972f28" class=3D"confluenceTh">
+<p local-id=3D"057d0609-8535-46b2-a2a1-867548349d22">Application Descriptio=
+n</p>
+</th>
+<td data-local-id=3D"c1bd23d4-c82d-4b9b-8c6e-6bc5bbe682b3" class=3D"conflue=
+nceTd">
+<p local-id=3D"d81f7cf5-82db-42d6-8c64-dd7b764557a6"></p>
+</td>
+<td data-local-id=3D"92b8e667-e440-469c-b2eb-a7462fd26c8e" class=3D"conflue=
+nceTd">
+<p local-id=3D"53664c92-ffa4-4721-a64f-4a47b61ced91">Short description of t=
+he application (purpose)</p>
+</td>
+</tr>
+<tr data-local-id=3D"edfb14f7-51e9-434d-a231-99ff9016a80f">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"36cdcffe-2b9c-409b-9=
+e93-cf913742ecc3" class=3D"confluenceTh">
+<p local-id=3D"61c66eef-6f0c-4ba7-96a5-c0317cf9adb4">Application Owner</p>
+</th>
+<td data-local-id=3D"6888cc7b-9646-4479-ac5e-6fcf2ab74c30" class=3D"conflue=
+nceTd">
+<p local-id=3D"1b80bdc0-6f0d-425b-a748-80146a122832"></p>
+</td>
+<td data-local-id=3D"b20d17f4-c9e3-461d-94c0-8d92e3112348" class=3D"conflue=
+nceTd">
+<p local-id=3D"7ba22b09-af17-4942-ae08-8574eea60b9d">Business Owner - Needs=
+ to be provided as mail adress for individuals or GroupID for notifications=
+</p>
+</td>
+</tr>
+<tr data-local-id=3D"44a2ca85-edd4-40c7-9918-59db271d2f4c">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"07febed7-e240-4e0d-b=
+3f7-892d93da26ca" class=3D"confluenceTh">
+<p local-id=3D"2a807167-2ce8-4621-8808-4e02ccbb7b45">Technical Service</p>
+</th>
+<td data-local-id=3D"d6463c25-c426-4f94-9638-afd183fb6d87" class=3D"conflue=
+nceTd">
+<p local-id=3D"d69b64d5-84ed-497b-8e45-167397baf80f"></p>
+</td>
+<td data-local-id=3D"d3378548-2125-49b3-818b-e808aab989b5" class=3D"conflue=
+nceTd">
+<p local-id=3D"7810a32b-a18c-4ea9-9d2b-27ac62ccead9">Same as BEE ID - Servi=
+ce description</p>
+</td>
+</tr>
+<tr data-local-id=3D"8bc91f53-cc21-4f64-ab99-9176297045ec">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"f29c9392-13a8-4edc-b=
+150-a219155e5b23" class=3D"confluenceTh">
+<p local-id=3D"b172a2d9-96df-496f-8621-65f13bfb54c7">Technical Owner</p>
+</th>
+<td data-local-id=3D"28362d0f-7287-4ed8-a6b6-349a10567786" class=3D"conflue=
+nceTd">
+<p local-id=3D"e44a6478-1e3d-42f7-9b06-d6352c493b5c"></p>
+</td>
+<td data-local-id=3D"6407807a-8d3b-4b60-ad57-aa98d2b9c3d6" class=3D"conflue=
+nceTd">
+<p local-id=3D"8004bd91-39ba-4e51-8dd2-d60dca7d2b0e">Internal person (Vorwe=
+rk) who is responsible for implementation and technical advisory / <strong>=
+able to give approvals related to technical changes - </strong>Needs to be =
+provided as mail adress for individuals or GroupID for notifications</p>
+</td>
+</tr>
+<tr data-local-id=3D"88f16999-dca6-424f-bb60-69dd1670cb48">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"2b836439-6e06-429d-9=
+785-af3aac17ecf3" class=3D"confluenceTh">
+<p local-id=3D"fb7118d9-d610-4695-bcdf-57d30a3c4aea">Location</p>
+</th>
+<td data-local-id=3D"2b4f5d21-154f-454c-a41a-01384d1db4cb" class=3D"conflue=
+nceTd">
+<p local-id=3D"d8d148f9-0e30-49bf-96b5-6bdd1983011a"></p>
+</td>
+<td data-local-id=3D"b9986259-ee38-443a-86c0-2fba49aa101b" class=3D"conflue=
+nceTd">
+<p local-id=3D"9676ce52-ab0d-4489-bd5e-64633f503129">WEU / SWC / SEA</p>
+</td>
+</tr>
+<tr data-local-id=3D"cac17b32-5fbf-4f8d-a16d-76126ec03e00">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"2f28f31e-a20e-4efc-8=
+69f-b67b356c905c" class=3D"confluenceTh">
+<p local-id=3D"8ae216bf-537e-46a5-bba1-11c31eed355f">IT Product</p>
+</th>
+<td data-local-id=3D"4a8eb1da-04c1-49a5-a180-af087e7ae65e" class=3D"conflue=
+nceTd">
+<p local-id=3D"d7e8538b-a3d2-4231-acf0-17af91073776"></p>
+</td>
+<td data-local-id=3D"7bf58b5d-bbd7-4a30-b93a-2959926b02f2" class=3D"conflue=
+nceTd">
+<p local-id=3D"31659b33-276d-42ce-be20-b9be3c48324c">Belongs to which Produ=
+ct in Vorwerk (organizational)</p>
+</td>
+</tr>
+<tr data-local-id=3D"81d29420-f6ec-4162-ab4b-155a62382b71">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"08ba8de6-f301-447c-8=
+bbd-98679e4acb40" class=3D"confluenceTh">
+<p local-id=3D"175e5234-de8e-4606-9d52-f48856dc6445">Organizational Unit</p=
+>
+</th>
+<td data-local-id=3D"ccfb134c-b049-4845-bc7a-6050058fb02f" class=3D"conflue=
+nceTd">
+<p local-id=3D"6798d61b-7266-4de3-8290-20cd4576bd2d"></p>
+</td>
+<td data-local-id=3D"dd1d673e-6dae-45be-931f-5fd19b4c0ed1" class=3D"conflue=
+nceTd">
+<p local-id=3D"b8958da8-f661-4857-bd54-b971d6457345">Belongs to which Orgai=
+nizational Unit in Vorwerk (VSDE, VEW, etc.)</p>
+</td>
+</tr>
+<tr data-local-id=3D"68761d09-2369-4fa2-9d4e-08b3da1aae9c">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"3bbc912b-a5e3-4e4d-8=
+234-b80c80e566bf" class=3D"confluenceTh">
+<p local-id=3D"65d9352b-0d87-43a4-9c54-c3a4e7c6bf25">Workload Type</p>
+</th>
+<td data-local-id=3D"0a2210c8-7596-45aa-9284-f0ed73fd854a" class=3D"conflue=
+nceTd">
+<p local-id=3D"e3259653-f7bd-4018-9472-f1600e57e6a2"></p>
+</td>
+<td data-local-id=3D"82c23c25-496a-4488-854e-f5165aa98e41" class=3D"conflue=
+nceTd">
+<p local-id=3D"2c6ca948-2fd2-412b-8e52-4f78cc53bfe2">Managed / Self-Managed=
+</p>
+</td>
+</tr>
+<tr data-local-id=3D"0226e9d4-707e-4be0-8274-d80f3a88eef8">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"1cd809a6-2e7f-4bfd-a=
+ad9-0e7980d11b49" class=3D"confluenceTh">
+<p local-id=3D"5e37a13f-407e-4472-abc6-7607a1df5ccb">Workload Class</p>
+</th>
+<td data-local-id=3D"91ed0616-2acc-441b-8c77-805a427d5536" class=3D"conflue=
+nceTd">
+<p local-id=3D"685d3c2a-95e0-488e-ac82-55f57e379c3b"></p>
+</td>
+<td data-local-id=3D"e5942f77-5b1c-43c9-a538-db144bb7511b" class=3D"conflue=
+nceTd">
+<p local-id=3D"15679c86-a068-4bd4-a4ff-fcc26ea22f15">Shared / Dedicated</p>
+</td>
+</tr>
+<tr data-local-id=3D"29cc72bc-5bdd-4a6a-92d3-cf9e712683cd">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"69880ef4-8b76-4cd4-8=
+470-edec79e95168" class=3D"confluenceTh">
+<p local-id=3D"adc66082-fda4-4b96-b394-bed3a476ef4b">Construction</p>
+</th>
+<td data-local-id=3D"c1a8cc1b-2910-4525-b081-febc9c403845" class=3D"conflue=
+nceTd">
+<p local-id=3D"d05f26d8-ed83-4076-9044-c25f9f7ebf95"></p>
+</td>
+<td data-local-id=3D"e74d6c20-18ec-42f5-9e1b-95875f33cc34" class=3D"conflue=
+nceTd">
+<p local-id=3D"f96617e5-9484-4c94-9049-44e6bab8c2f6">Responsible provider f=
+or construction</p>
+</td>
+</tr>
+<tr data-local-id=3D"5ccc32e5-fc07-4a7a-a4b2-893e49e68b88">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"e3844cfc-73b1-4504-8=
+290-10241e458370" class=3D"confluenceTh">
+<p local-id=3D"5a5f64b5-f155-420d-ae08-21d1094ddef8">Operation</p>
+</th>
+<td data-local-id=3D"1ed9d317-5f7c-47b2-8608-5eac51f0350a" class=3D"conflue=
+nceTd">
+<p local-id=3D"78b6098d-7db3-4eb0-90e9-ff780daf05e8"></p>
+</td>
+<td data-local-id=3D"c9c92ec1-2436-474c-ae6a-5a3604ef862e" class=3D"conflue=
+nceTd">
+<p local-id=3D"1bf9d555-a0a5-457c-8183-901573943b20">Responsible provider f=
+or operation</p>
+</td>
+</tr>
+<tr data-local-id=3D"1e31ce7e-3889-4f50-bc7b-26d0a2e0aa3b">
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"888f9b29-1ec4-4810-8=
+278-513c10be1b65" class=3D"confluenceTh">
+<p local-id=3D"402382c3-a078-41e6-83ce-d90cc74a5be4">Data Classification</p=
+>
+</th>
+<td data-local-id=3D"a8626f39-e4d5-4025-b455-ab5dfcf29099" class=3D"conflue=
+nceTd">
+<p local-id=3D"1434acb1-26cc-42cb-ba6b-50f94b7d7918"></p>
+</td>
+<td data-local-id=3D"4843c3d3-5252-497b-bf95-2c52bb016484" class=3D"conflue=
+nceTd">
+<p local-id=3D"f825a04a-5fb8-4e48-8fe2-fca745486d26"><a href=3D"https://vor=
+werk.atlassian.net/wiki/spaces/GITI/pages/6362628874/Information+Security+a=
+nd+Privacy+Classification" data-linked-resource-id=3D"6362628874" data-link=
+ed-resource-version=3D"9" data-linked-resource-type=3D"page">Information Se=
+curity and Privacy Classification - Chapter EA | Enterprise Architecture - =
+Confluence</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h2 local-id=3D"365e0572-4aee-4506-9fe6-a17121512cc1" id=3D"CO|Onboardingsh=
+eet-Specifications">Specifications</h2>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"d8c3cc27-1ad3-46b2-9070-413f42c5ebea"><a class=3D"confluence=
+-userlink user-mention" data-account-id=3D"712020:3a9f7a8c-2dcd-464f-add3-a=
+37026a8dfe4" href=3D"https://vorwerk.atlassian.net/wiki/people/712020:3a9f7=
+a8c-2dcd-464f-add3-a37026a8dfe4?ref=3Dconfluence" target=3D"_blank" data-li=
+nked-resource-id=3D"8488878095" data-linked-resource-version=3D"1" data-lin=
+ked-resource-type=3D"userinfo" data-base-url=3D"https://vorwerk.atlassian.n=
+et/wiki">Schwarz, Jan</a> - Architectural points missing - fix tomorrow</p>
+</div>
+</div>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1800" data-layout=3D"align-start" data-local-id=
+=3D"a74f570e-f39a-4502-87f0-6be1c2e9ee20" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 600.0px;">
+<col style=3D"width: 563.0px;">
+<col style=3D"width: 635.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"9f800f5d-e519-452a-b848-67ec38085a4d">
+<th data-local-id=3D"d06a7f84-d736-46d9-91bd-bb8476374e52" class=3D"conflue=
+nceTh">
+<p local-id=3D"1e3e8dc7-1618-426a-92ac-df8754aaecaf"><strong>Name</strong><=
+/p>
+</th>
+<th data-local-id=3D"aa58c99d-cd6e-449f-99c6-897cfa25252c" class=3D"conflue=
+nceTh">
+<p local-id=3D"5c682ab5-19b5-4418-95cd-d74f445859aa"><strong>Input</strong>=
+</p>
+</th>
+<th data-local-id=3D"8af514d6-2497-484d-a77e-eadac38d073e" class=3D"conflue=
+nceTh">
+<p local-id=3D"ecbc9c19-38bb-418e-9771-06d52f6e63dd"><strong>Notes</strong>=
+</p>
+</th>
+</tr>
+<tr data-local-id=3D"abf5db39-0f98-45ac-bd6b-c5345ada3903">
+<td data-local-id=3D"147c3956-c15c-45a0-b76e-367c40e3abef" class=3D"conflue=
+nceTd">
+<p local-id=3D"da7a8105-3640-4aad-8a5f-2b4bffc12e69">Environments</p>
+</td>
+<td data-local-id=3D"e5ffc814-da2d-4c4d-8634-7e154d1f686c" class=3D"conflue=
+nceTd">
+<p local-id=3D"fa227ee2-1393-4e6c-a699-0b3d97dc5531"></p>
+</td>
+<td data-local-id=3D"1f63b7ee-bc72-49fd-91ac-8b3058787a12" class=3D"conflue=
+nceTd">
+<p local-id=3D"8d8af3ea-aa63-4685-81d0-ee80e7147ec8">Which type(s) of envir=
+onment(s) is/are needed? - DEV/TST/QAS/PRD</p>
+</td>
+</tr>
+<tr data-local-id=3D"d5b1d9da-ae29-4b99-ab08-793ad43a982f">
+<td data-local-id=3D"52d2ca3d-5b19-4313-b844-30a954882e5c" class=3D"conflue=
+nceTd">
+<p local-id=3D"d2e5271d-50be-4f0c-9d61-ddde290a3067">High Availability</p>
+</td>
+<td data-local-id=3D"d64f614f-b811-4a8a-858d-0ff3e3b46f08" class=3D"conflue=
+nceTd">
+<p local-id=3D"413bdf36-5ae0-46d2-a655-6b5427d57333"></p>
+</td>
+<td data-local-id=3D"42c55353-f096-434c-9df9-211c723eb9a2" class=3D"conflue=
+nceTd">
+<p local-id=3D"1282ff3c-25af-46dd-8df9-22122a438f06">What is the required a=
+vailability target (e.g., 99.9%, 99.99%)</p>
+<p local-id=3D"d3169e9cfc79"><a href=3D"https://vorwerk.atlassian.net/wiki/=
+spaces/CFG/pages/9269411841/CO+Availability" data-linked-resource-id=3D"926=
+9411841" data-linked-resource-version=3D"4" data-linked-resource-type=3D"pa=
+ge">CO | Availability</a></p>
+</td>
+</tr>
+<tr data-local-id=3D"1fce5d56-991c-4156-a3c1-01719d73ed0c">
+<td data-local-id=3D"b91dd6c1-9ef2-495b-a88e-7574921c2ab1" class=3D"conflue=
+nceTd">
+<p local-id=3D"bd0d0db5-c553-4ac9-8c0c-a883a65036b0">Loadbalancing</p>
+</td>
+<td data-local-id=3D"dfef6af6-49a0-4ae2-b3c4-0f08d4515aa1" class=3D"conflue=
+nceTd">
+<p local-id=3D"11f4fed4-c32d-4de6-bd55-a25dca1bff36"></p>
+</td>
+<td data-local-id=3D"d28a5d89-7413-44db-a51e-06cf298b30f1" class=3D"conflue=
+nceTd">
+<p local-id=3D"e3be78c6-558c-4a9b-9095-51c18f7fb73f">Does the application s=
+upport load balancing? If yes, is it internal or external?</p>
+</td>
+</tr>
+<tr data-local-id=3D"4afaa038-4610-4fbb-884d-40c5e3760728">
+<td data-local-id=3D"52e42f00-c3eb-4e07-ae19-c011e6f5d9d7" class=3D"conflue=
+nceTd">
+<p local-id=3D"2e6b487a-3478-4a31-91c7-989f39b96f00">Disaster Recovery (RPO=
+ / RTO)</p>
+</td>
+<td data-local-id=3D"30fb2705-d4f4-491d-b69c-50e1ca6ca10b" class=3D"conflue=
+nceTd">
+<p local-id=3D"6d463a63-c7c7-43f4-9701-1bf8595c6862"></p>
+</td>
+<td data-local-id=3D"1acded2d-3ac4-49bc-aabe-5dd0a64eb7f0" class=3D"conflue=
+nceTd">
+<p local-id=3D"0837e7b6-31b7-4756-a420-7ac7ae78d60b">What are the Recovery =
+Time Objective (RTO) and Recovery Point Objective (RPO)?</p>
+<p local-id=3D"4cc8962c-1e53-4218-ae6d-72cb8bba4324"><a href=3D"https://vor=
+werk.atlassian.net/wiki/spaces/CFG/pages/9269411841/CO+Availability" data-l=
+inked-resource-id=3D"9269411841" data-linked-resource-version=3D"4" data-li=
+nked-resource-type=3D"page">CO | Availability</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 local-id=3D"6c44e0e2-49b6-4faa-a3ce-c2f356c378e7" id=3D"CO|Onboardingsh=
+eet-AccessManagement">Access Management</h2>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"12ec1046-0e50-4a28-ac6d-9eb94ecf1247">Please use Vorwerk Ent=
+ra ID ADM account. If it does not exist (internal / external), please follo=
+w SNOW process to create an account.</p>
+</div>
+</div>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1800" data-layout=3D"align-start" data-local-id=
+=3D"ca579c2f-6e6a-4b45-a9bc-7e0795f418a0" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 252.0px;">
+<col style=3D"width: 216.0px;">
+<col style=3D"width: 267.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"eab58037-b809-43d4-b82d-8f0231eaa173">
+<th data-local-id=3D"43593a19-e1d1-4c39-a1bf-b8077a5bac4c" class=3D"conflue=
+nceTh">
+<p local-id=3D"a3cf778b-64c2-4083-9adb-782ac3ce9826"><strong>Role</strong><=
+/p>
+</th>
+<th data-local-id=3D"aee756f7-f4ab-4f66-a27c-3146370e76b2" class=3D"conflue=
+nceTh">
+<p local-id=3D"d5291134-3558-40fc-aa27-9b8f9754f3bc"><strong>Input (UPN)</s=
+trong></p>
+</th>
+<th data-local-id=3D"ca921d0a-1479-4f79-877d-4679a0149ab4" class=3D"conflue=
+nceTh">
+<p local-id=3D"dc240d70-508a-4e9b-a4eb-e697178f6415"><strong>Notes</strong>=
+</p>
+</th>
+</tr>
+<tr data-local-id=3D"372c6dd7-a0c8-4954-9bbb-868320b259e3">
+<td data-local-id=3D"4e1bce34-8ae9-481e-b1ef-cffa19ccac22" class=3D"conflue=
+nceTd">
+<p local-id=3D"cfe28aef-92ee-43a3-b0e0-cb0bec5fd7be">Owner (self-managed on=
+ly)</p>
+</td>
+<td data-local-id=3D"46d6a918-f0ba-492c-ae6b-907e06e91860" class=3D"conflue=
+nceTd">
+<p local-id=3D"71e0d97e-9163-4036-85ae-c5d27fefb8dc"></p>
+</td>
+<td data-local-id=3D"a47eff80-5014-4184-845d-d19cc74e5a4e" class=3D"conflue=
+nceTd">
+<p local-id=3D"d963e3a7-5643-417a-9ef7-7fcdbce5c6d2">Specify the users to b=
+e assigned the Owner role for this application zone.</p>
+</td>
+</tr>
+<tr data-local-id=3D"8c121a1e-a87f-456e-843a-1afe873fb2ea">
+<td data-local-id=3D"26c2c742-1453-480e-b72b-d99fb729cdd6" class=3D"conflue=
+nceTd">
+<p local-id=3D"c444f7fb-4b4c-4be3-8703-5e0f8e8522dc">Reader</p>
+</td>
+<td data-local-id=3D"ad637969-89ed-42c2-b21a-2d7afda6b691" class=3D"conflue=
+nceTd">
+<p local-id=3D"87954633-2ddf-41be-be5d-6d152ff06916">adm.ext.firstname.last=
+name@vorwerk.group</p>
+</td>
+<td data-local-id=3D"7b57863b-5aa1-4bc3-8e5d-8a9253be7785" class=3D"conflue=
+nceTd">
+<p local-id=3D"a2c35fd6-b2d0-48b0-ae10-688acd7a6861">Specify the users to b=
+e assigned the Reader role for this application zone.</p>
+</td>
+</tr>
+<tr data-local-id=3D"9898e465-8561-40c6-bd18-b7b1fa5f87b8">
+<td data-local-id=3D"3d45c5de-74cd-49a6-8360-dc8bd4f42c4f" class=3D"conflue=
+nceTd">
+<p local-id=3D"9377cb58-e6a1-423d-a37c-0303f17bf882">Contributor</p>
+</td>
+<td data-local-id=3D"8075c49e-5f41-4c03-98a0-5f7f920bf3c7" class=3D"conflue=
+nceTd">
+<p local-id=3D"79f7d69d-b5b7-4f5b-a43d-3e96f557e55b"></p>
+</td>
+<td data-local-id=3D"4deaedd4-57a1-4b3f-b517-4817bae56bfa" class=3D"conflue=
+nceTd">
+<p local-id=3D"021537d6-f92b-4007-81cc-7e325d2ae106">Specify the users to b=
+e assigned the Contributor role for this application zone.</p>
+</td>
+</tr>
+<tr data-local-id=3D"37cd2fca-546f-4e2c-808b-322138ea9404">
+<td data-local-id=3D"5fa40e7d-123d-436e-b168-8a589da870a1" class=3D"conflue=
+nceTd">
+<p local-id=3D"fd4793cc-ebfd-40c6-9a82-81ec50b2b321">VMuser</p>
+</td>
+<td data-local-id=3D"e37393f2-efef-45d0-a482-185ff58bcd0d" class=3D"conflue=
+nceTd">
+<p local-id=3D"1f33329a-5a0d-48ef-94d3-5716530a5169"></p>
+</td>
+<td data-local-id=3D"218c114f-d6a9-4a5c-8561-48ce10b623e4" class=3D"conflue=
+nceTd">
+<p local-id=3D"f28edd1c-a525-434d-80ba-5a81581b44e0">Specify the users whic=
+h should have access to the VM.</p>
+</td>
+</tr>
+<tr data-local-id=3D"01f24b3b-9b35-401b-b5c3-46c8fb9c765d">
+<td data-local-id=3D"42b1b605-fceb-4416-8e4b-a9a7db3b3336" class=3D"conflue=
+nceTd">
+<p local-id=3D"e7e35404-daef-41fd-b6d4-d6e4cbef5f9f">VMadmin</p>
+</td>
+<td data-local-id=3D"73680718-798e-489e-abec-78d56c3a0d7f" class=3D"conflue=
+nceTd">
+<p local-id=3D"32122704-8db8-4a1b-80d8-e92baea3756b"></p>
+</td>
+<td data-local-id=3D"71932b03-5d2f-431f-a0b5-3eb9dfd63d78" class=3D"conflue=
+nceTd">
+<p local-id=3D"6a8ed478-956a-43d0-a6af-11095ab00d33">Specify the users whic=
+h should have administrative access to the VM.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 local-id=3D"6a596857-afd8-449e-8ec7-5186bb334bd1" id=3D"CO|Onboardingsh=
+eet-CommunicationMatrix">Communication Matrix</h2>
+<div class=3D"panel" style=3D"background-color: #EAE6FF;border-color: #998D=
+D9;border-width: 1px;">
+<div class=3D"panelContent" style=3D"background-color: #EAE6FF;">
+<p local-id=3D"46edcf4a-3d99-4e64-a75d-a9088c3e85ab"><a href=3D"https://vor=
+werk.atlassian.net/wiki/spaces/CFG/pages/8730542466/CO+Communication+matrix=
+" data-linked-resource-id=3D"8730542466" data-linked-resource-version=3D"2"=
+ data-linked-resource-type=3D"page">CO | Communication matrix</a> - please =
+check for communication adjustments.</p>
+</div>
+</div>
+<h2 local-id=3D"3e6b9958-acc4-4004-9879-e00bfa10acab" id=3D"CO|Onboardingsh=
+eet-Update">Update</h2>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"76f8e533-0a06-454c-b4b7-69ab61817482">Please check and updat=
+e in the last column if there are deviations - further information could be=
+ found in our <a href=3D"https://vorwerk.atlassian.net/wiki/spaces/CFG/page=
+s/8730542267/CO+Update" data-linked-resource-id=3D"8730542267" data-linked-=
+resource-version=3D"2" data-linked-resource-type=3D"page">Update </a>area.<=
+/p>
+</div>
+</div>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1800" data-layout=3D"center" data-local-id=3D"bb=
+55e202-a3d7-4079-9a3e-e21e0b322965" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"70a3b115-560f-4f92-a1a9-3d940917fd11">
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"2032e721-5db8-4d1b-9=
+f2a-8beecd937fe8" class=3D"confluenceTd">
+<p local-id=3D"528b3d46-ea88-4dab-8a86-46cefef602d7"><strong>Update Managem=
+ent&nbsp;</strong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"ddb4cecf-5ecc-4152-b=
+3d0-109c732bfbfc" class=3D"confluenceTd">
+<p local-id=3D"56d28df9-bd67-48b0-9a95-e5faabb49e30"><strong>Existing sched=
+ules to choose</strong></p>
+</td>
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"4424a660-877e-4ced-a=
+028-340334509888" class=3D"confluenceTd">
+<p local-id=3D"f2f3492e-7dd2-4ac1-8c48-9fc645c2580b"><strong>Custom schedul=
+e</strong></p>
+</td>
+</tr>
+<tr data-local-id=3D"3fed08d5-968a-4b8c-9de9-b771e73607ea">
+<td data-local-id=3D"a275d7bf-b1e6-4e9e-b83f-8180b0560a3e" class=3D"conflue=
+nceTd">
+<p local-id=3D"c512704e-ee72-4e93-81c3-75d670ea1eb3">Update Tag (Key)&nbsp;=
+</p>
+</td>
+<td data-local-id=3D"6a081427-5766-4c42-9fc0-4f6f0c5ecd97" class=3D"conflue=
+nceTd">
+<p local-id=3D"8b14f2dc-669d-4a8b-8913-821ebce8aaec">vm-update-schedule&nbs=
+p;</p>
+</td>
+<td data-local-id=3D"48277280-bafc-47ca-8087-a55a28a2d649" class=3D"conflue=
+nceTd">
+<p local-id=3D"64670c01-e798-42a3-a06f-e18d81e62c8c">&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"04531531-e35a-4a13-a962-71856f14c742">
+<td rowspan=3D"7" data-local-id=3D"0de021bd-15bb-4c21-b113-61b1d2fe1a79" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"3f67e5b8-f4b9-4151-96b8-ea569096a960">Allowed Update Tag Val=
+ues&nbsp;</p>
+</td>
+<td data-local-id=3D"6b34b35e-f2dc-4e12-81c1-41d8129548b2" class=3D"conflue=
+nceTd">
+<p local-id=3D"cefe78a8-005b-49a5-aac1-c5e3ca5074f8">2-monday-2000, 2-monda=
+y-2200,&nbsp;&nbsp;</p>
+</td>
+<td rowspan=3D"7" data-local-id=3D"1d13eb36-4433-4209-b360-520fea7a4550" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"ee3b964b-8dac-4f09-b84f-8f3c0c5a4626">&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"1de6aaf1-7c29-4221-9d95-ff7bde91e362">
+<td data-local-id=3D"eb2d9bd6-77a5-44fc-945e-9d55edf8d87c" class=3D"conflue=
+nceTd">
+<p local-id=3D"09886883-db20-4581-a79c-1eb1f7ccf0bb">2-thursday-2000, 2-thu=
+rsday-2200,&nbsp;&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"a29e448c-3d75-4bbe-872c-8c8d1b8f2c86">
+<td data-local-id=3D"269e7440-4311-4dc0-834b-b97e97eb2db6" class=3D"conflue=
+nceTd">
+<p local-id=3D"9a79bfdc-8565-4c4c-a385-35cc0974721f">2-sunday-2000, 2-sunda=
+y-2200,&nbsp;&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"b731a6fa-fa66-43eb-b5ca-ebd9215d8ab0">
+<td data-local-id=3D"48bb3e71-b58d-4db1-acb6-b0add4269b3b" class=3D"conflue=
+nceTd">
+<p local-id=3D"73c7f8d0-1b16-45be-93a7-88d57e44d230">3-monday-2000, 3-monda=
+y-2200,&nbsp;&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"d823d187-8425-4395-8934-079e9cb309dd">
+<td data-local-id=3D"74a49257-44f7-4079-9fcd-3709e729f4e5" class=3D"conflue=
+nceTd">
+<p local-id=3D"498620fa-44f3-4017-8759-c62a82d465db">3-thursday-2000, 3-thu=
+rsday-2200,&nbsp;&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"35621234-1c99-4154-ae07-773f2f588717">
+<td data-local-id=3D"b2666636-7a5e-4c65-9e29-4434520167d7" class=3D"conflue=
+nceTd">
+<p local-id=3D"46d6f9af-49b9-4a7b-94d6-ec2c6cccc9cb">3-sunday-2000, 3-sunda=
+y-2200,&nbsp;&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"c3056121-22f0-4323-8e94-df27dcfc73f5">
+<td data-local-id=3D"f2f88a72-d35f-4b09-b48c-762f4655b20e" class=3D"conflue=
+nceTd">
+<p local-id=3D"809b6930-33fd-4293-a5ad-e5f8677dbe06">manual&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"65dd8b8e-ad76-4e07-8510-de61996ddd6f">
+<td data-local-id=3D"cca2a1f0-5d34-41f1-ba55-af498afb0165" class=3D"conflue=
+nceTd">
+<p local-id=3D"862dfac4-4cc3-458e-aa24-27d5b292382e">Default Value&nbsp;</p=
+>
+</td>
+<td data-local-id=3D"5a299b97-1e71-4388-8f27-d7d0d2dbf0cc" class=3D"conflue=
+nceTd">
+<p local-id=3D"87571ee2-2deb-4d95-822d-22d19307ea88"><a href=3D"https://vor=
+werk.atlassian.net/wiki/spaces/CFG/pages/9102065682/CO+Schedules" data-link=
+ed-resource-id=3D"9102065682" data-linked-resource-version=3D"8" data-linke=
+d-resource-type=3D"page">CO | Schedules - Cloud Operations | Backbone - Con=
+fluence</a></p>
+</td>
+<td data-local-id=3D"1c70725d-734b-4381-a90b-5f224e1e7486" class=3D"conflue=
+nceTd">
+<p local-id=3D"2c982965-8d43-4a12-9e8a-f03a4296742e">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"panel" style=3D"background-color: #EAE6FF;border-color: #998D=
+D9;border-width: 1px;">
+<div class=3D"panelContent" style=3D"background-color: #EAE6FF;">
+<p local-id=3D"1ef42d04-0e74-451f-b574-9070e5d090ad"><strong>3-sunday-2200 =
+- Update schedule: Every 3rd Sunday at 10pm once a month.</strong></p>
+</div>
+</div>
+<h2 local-id=3D"295c4995-f95b-47de-9c51-2f37e5d4a506" id=3D"CO|Onboardingsh=
+eet-Backup">Backup</h2>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"9edd4b7d-f689-49eb-b5b6-c92f4410fb6f">Please check and updat=
+e in the last column if there are deviations - further informations in our =
+<a href=3D"https://vorwerk.atlassian.net/wiki/spaces/CFG/pages/8730542247/C=
+O+Backup" data-linked-resource-id=3D"8730542247" data-linked-resource-versi=
+on=3D"5" data-linked-resource-type=3D"page">Backup</a> area.</p>
+</div>
+</div>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1800" data-layout=3D"align-start" data-local-id=
+=3D"cd12a907-53a6-42f2-b720-e1853a28f480" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"121f13f2-861e-46be-b7b2-16ebcd0da605">
+<th data-local-id=3D"f3a9d5bf-3e6c-4161-9b02-d65ab46735b5" class=3D"conflue=
+nceTh">
+<p local-id=3D"37daba59-fea6-417e-a03e-57649d1e8738"><strong>Azure Backup</=
+strong></p>
+</th>
+<th data-local-id=3D"58b23ab2-9975-4772-a5ff-87211f008639" class=3D"conflue=
+nceTh">
+<p local-id=3D"7b213a0a-8bfd-4bfd-98b7-f562af1f40db"><strong>Existing sched=
+ules to choose</strong></p>
+</th>
+<th data-local-id=3D"f011a88c-a432-4bac-bf29-e346cf79b886" class=3D"conflue=
+nceTh">
+<p local-id=3D"fdaffdc0-3500-4443-8bd9-b39f4b301879"><strong>Custom schedul=
+e</strong></p>
+</th>
+</tr>
+<tr data-local-id=3D"610be7b1-8af2-449a-8e44-5f88ae529820">
+<td data-local-id=3D"a14d03c5-5301-4205-8ef7-1a28b03466c9" class=3D"conflue=
+nceTd">
+<p local-id=3D"96564f42-eece-462f-b5bf-5d40740bc81b">Backup Tag (Key)</p>
+</td>
+<td data-local-id=3D"56025b74-35be-4ddd-9ddf-19acef82b0bf" class=3D"conflue=
+nceTd">
+<p local-id=3D"229d0bd4-8da3-45a3-baa3-982f98d15e1d">vm-backup-policy</p>
+</td>
+<td data-local-id=3D"52cff86d-2245-4edb-a2ab-e24c129e8f54" class=3D"conflue=
+nceTd">
+<p local-id=3D"caf728ed-68e2-4f87-8eb5-12ec2421dcc5"></p>
+</td>
+</tr>
+<tr data-local-id=3D"0db9aded-51c2-4069-863c-8237eb0d460a">
+<td rowspan=3D"3" data-local-id=3D"96101aab-cbdf-47e2-8e90-ac1488d9ba53" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"0b769670-0138-4a25-ac0b-0cf3e6b3e3f1">Allowed Backup Tag Val=
+ues&nbsp;</p>
+</td>
+<td data-local-id=3D"3fd41270-713d-4a29-a05e-dead71737b0e" class=3D"conflue=
+nceTd">
+<p local-id=3D"2578f555-3aa7-42d1-b287-bb12277d5ad8">vm-daily-1900-7d-4w</p=
+>
+</td>
+<td rowspan=3D"4" data-local-id=3D"eb270c14-53df-4a9e-913f-ba853f0d3c26" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"a191b5dc-2fd8-408b-9f42-c5338244e933"></p>
+</td>
+</tr>
+<tr data-local-id=3D"2d504e53-13b7-414e-b062-93a0eb8550a8">
+<td data-local-id=3D"ac54cf00-36d4-41a9-875d-4890148a0ec2" class=3D"conflue=
+nceTd">
+<p local-id=3D"27344b60-8855-4110-8fd9-6b5b9fc28477">vm-daily-1900-7d-4w-6m=
+&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"da417ea7-3e01-4079-a70f-fd070a11bf88">
+<td data-local-id=3D"fdeaa85a-39e1-4401-8255-2c756a84054d" class=3D"conflue=
+nceTd">
+<p local-id=3D"55ca34ce-cea1-4db2-9c1f-caa4ad323a75">excluded&nbsp;</p>
+</td>
+</tr>
+<tr data-local-id=3D"ed5ed5bd-194f-4015-85d8-1ee7c298c1a4">
+<td data-local-id=3D"55ba2602-17b6-417e-9f36-ae89466618bd" class=3D"conflue=
+nceTd">
+<p local-id=3D"098c4cec-3e54-4b0e-bdbb-bade6d6c5dbd">Default Value</p>
+</td>
+<td data-local-id=3D"ed64aeb2-a93e-414d-a7b6-22d12e28db00" class=3D"conflue=
+nceTd">
+<p local-id=3D"d925e7b7-abff-4ff0-afc3-88fd3e20bcbd">vm-daily-1900-7d-4w</p=
+>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"panel" style=3D"background-color: #EAE6FF;border-color: #998D=
+D9;border-width: 1px;">
+<div class=3D"panelContent" style=3D"background-color: #EAE6FF;">
+<p local-id=3D"e31f2f5b-bd38-45f1-ab14-b2ee8c8ff06b"><strong>vm-daily-1900-=
+7d-4w-6m&nbsp;=E2=86=92 Backup schedule: Daily at 7pm =E2=86=92 Daily backu=
+ps retained for 7 days =E2=86=92 Weekly backups retained for 4 weeks =E2=86=
+=92 Monthly backups retained for 6 months</strong></p>
+</div>
+</div>
+<p local-id=3D"c4712cc3-3734-456b-b67c-7124b458493c"></p>
+    </div>
+</body>
+</html>
+------=_Part_28_1720900624.1794484640509
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/6bf7e163b3637305ae747cf5667b280a943d76670fe9952630ad88321f13c5b7
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAn1BMVEVHcExmdX/M1t1mdX/M1t1m
+dX/M1t1mdX/M1t3M1t1mdX9mdX/dLkTdLkRmdX/dLkRmdX9mdX9mdX/dLkRmdX9mdX/dLkTdLkTM
+1t3///9mdX/dLkRtcXvSLkNWLzctMzi7LkGOLj3WMki/QFOTWmmwSVqEY3A4QUbHO0+iUmJxaHOa
+Lj5ASVCwLkCOPEqDLzxicXo8RUulLj8xOD1IUllwdA2rAAAAGHRSTlMAcM+vIFBggL/vEJ9gvyDP
+v2DPII/vEO8aiWpWAAABKklEQVR42u2S2XKCQBAAERUQ5VBD1AWv3Pf9/98WhtrMEMp1p+DFVKaf
+unaoBqbWaRD2+mnqx0w3M8xUhc9yM1P1w5jlJuJMIT2Om0JjmKbDMwUwPAsPd0IY9vEPGT41bBpm
+MdgMzObmLfnlaIbG8fRAZRLl9+XoJq+wOBJNGpl5oh8qYGx3Ipn/6izg7FKVXIPZnVjUS0leUcDr
+XvZrliNJbT/66EoBTxuWE7SnSJ9cFArY7liORBjCo7vqqdtnlhOO5jyn0oNSb9sd25sh4vH963PD
+c4J+rcbH637NcUuIj4Qk1AwtO/I/QyvNcZOQhP7GzV5puCYhCcnNlpDc7NO82RI6tVDQLRRgyOsW
+8hzEXXbAdYjBqH1nNHDqJbf19+gO4gVtMgHu5xtrEawcpq3mSAAAAABJRU5ErkJggg==
+------=_Part_28_1720900624.1794484640509
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/e007b898783e97d3ca35087721408a36ca5b0b5fd7dbeebefa6f0997b274aa6d
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAk1BMVEVHcEwiZplVrO5VrO5VrO4i
+ZplVrO4iZplVrO4iZplVrO4iZplVrO4iZpkiZplVrO4iZplVrO4iZpkiZpkiZplVrO5VrO4iZplV
+rO5VrO4iZplVrO4iZpkiZplVrO4xerEiZplVrO4veK4sc6lPo+Mlap44hb4/jclCks5Im9lFltM1
+gLkob6RLn948icRSqOkyfLTrzL1IAAAAIHRSTlMAn59AEBDvv7/vMDCPYFBgICBA34DfcM/PgI9Q
+r3Cv33gbXUAAAAG0SURBVHja3dZXUsMwEIBhd1kuiWtCHMoqvQL3Px0zeQqWtbsKMAH+A3xjrWTZ
+zj1KJll8KZsktyvlrFVXRd5tVpAprbi0d/xWDRSNbZ2xMuTZOsYyq3UppLnFnCMMagM2NFNoE4sH
+Qmv5kyYqmZCHM/xxxxQ0+4cQvf/pUycudU8pPWzfoBRNDVfJlzMBecEQE3agtVjh0sOAVNUw0Hpn
+O6UcDB1RKNYdYxsbqAKkAx8KJQad3szQ82eoAbStGRprD4R14m5/DkQrA+P3jpFLQQfmd0RQ0Ct2
+QX4dip1vghJ7aItPiD/s/dCW6U4qKOion+2o1JxCAtmyL0UJsjCsLeOSrTnQQnvF9OAGyPlRaMqB
+3hlQw4F2vcM4D3QonLK2v5/n61JFMfvByzbWqUcc2rC/tDl1QZpqE+RQ4ltPvCojDDorTArYU9oo
+NI97BpYKL+pfSnLYWa8UkcOS1mfFgeiB7xVZyflF2tFOzLpQHEa/HqoaMdWhbhRaKSNXgim3YjN5
+DWiCRxUCyNyQsSoJjOqUdICXJKRCAlfCV+cCOxeFgJ9EVwYWOVh3gQoMEnxHOH+oD+qQe2emyBLU
+AAAAAElFTkSuQmCC
+------=_Part_28_1720900624.1794484640509
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/38b7e9d522369fec97b7680a0bcbf06080b2b353edae5740d97ba7a9b745aff8
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAARVBMVEVHcEx3slV3slV3slV3slV3
+slX///93slWAt2D3+vSRwHXM4r+72aqz1J/u9eqIvGrm8d+qz5WZxYDd7NXV58rE3bWiyor8Z4cF
+AAAABnRSTlMAYO8gz79WeQLOAAABcUlEQVR4Xu3YWY6DQAwEUEjA7pV1uf9RR1lGcjqtFGr3SPOR
+OsCD+imEm1vanhXp2+aRa8fKdNe7c2F1Ljep4wrpmqblKmmbvg7UN1wpfwZ9IbO4GtDoicgGNTRa
+usdroZWemXVQpN9MCMLFnlFBG9WBDuFsCshYAR0KaEteCEO4mDXlkBkEFLkc2oWzcjm0yGJjAimK
+FUMhKVYKORJxCmgSTuBySBabGECniymgVTg7l0NROIMph+Sa0cIAUhQDECiGILxmGHLekvUGrBmG
+jseTrcNrlofSBtaBYgCKRLlvqE/WDEMrCQmsGYaklF8zDO0k4z/MNIBGSqR8MQxxeJeGzJphiOOr
+tJr8mmGI51dpkqwD0EfpQzEA8WLzzsAISuPy0gIhLOXXDEM8Tu/FTAnEZsoVwxCWPBdCbDzhNcNQ
+ukIHKyAhbayCOIhiKohne3MGx1qITQxh/n+/ol+o2pGl2tmn1iGq2mms3rGu2vnwB/HSjdEb7tSV
+AAAAAElFTkSuQmCC
+------=_Part_28_1720900624.1794484640509--
