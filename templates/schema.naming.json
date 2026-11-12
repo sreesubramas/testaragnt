@@ -1,0 +1,4060 @@
+[
+    {
+        "resourceType": "azurerm_virtual_desktop_application_group",
+        "abbreviation": "vdag",
+        "minLength": 1,
+        "maxLength": 60,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_desktop_scaling_plan",
+        "abbreviation": "vdscaling",
+        "minLength": 1,
+        "maxLength": 60,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_netapp_account",
+        "abbreviation": "netapp",
+        "minLength": 3,
+        "maxLength": 24,
+        "validationRegex": "^[a-z0-9]{3,24}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_desktop_workspace",
+        "abbreviation": "vdws",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-._()]{0,89}[a-zA-Z0-9-_()]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_desktop_host_pool",
+        "abbreviation": "vdpool",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-._()]{0,89}[a-zA-Z0-9-_()]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_analysis_services_server",
+        "abbreviation": "as",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-z][a-z0-9]{2,62}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_api_management_service",
+        "abbreviation": "apim",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-z][a-zA-Z0-9-][a-zA-Z0-9]{0,48}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_app_configuration",
+        "abbreviation": "appcg",
+        "minLength": 5,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9_-]{5,50}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_role_assignment",
+        "abbreviation": "ra",
+        "minLength": 1,
+        "maxLength": 64,
+        "validationRegex": "^[^%]{0,63}[^ %.]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_role_definition",
+        "abbreviation": "rd",
+        "minLength": 1,
+        "maxLength": 64,
+        "validationRegex": "^[^%]{0,63}[^ %.]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_automation_account",
+        "abbreviation": "aa",
+        "minLength": 6,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z][a-zA-Z0-9-]{4,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_automation_certificate",
+        "abbreviation": "aacert",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[^<>*%:.?+/]{0,127}[^<>*%:.?+/ ]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_automation_credential",
+        "abbreviation": "aacred",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[^<>*%:.?+/]{0,127}[^<>*%:.?+/ ]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_automation_runbook",
+        "abbreviation": "aarun",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z][a-zA-Z0-9-]{0,62}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_automation_schedule",
+        "abbreviation": "aasched",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[^<>*%:.?+/]{0,127}[^<>*%:.?+/ ]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_automation_variable",
+        "abbreviation": "aavar",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[^<>*%:.?+/]{0,127}[^<>*%:.?+/ ]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_batch_account",
+        "abbreviation": "ba",
+        "minLength": 3,
+        "maxLength": 24,
+        "validationRegex": "^[a-z0-9]{3,24}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_batch_application",
+        "abbreviation": "baapp",
+        "minLength": 1,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9_-]{1,64}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_batch_certificate",
+        "abbreviation": "bacert",
+        "minLength": 5,
+        "maxLength": 45,
+        "validationRegex": "^[a-zA-Z0-9_-]{5,45}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_batch_pool",
+        "abbreviation": "bapool",
+        "minLength": 3,
+        "maxLength": 24,
+        "validationRegex": "^[a-zA-Z0-9_-]{1,24}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_bot_web_app",
+        "abbreviation": "bot",
+        "minLength": 2,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_.]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_bot_channel_Email",
+        "abbreviation": "botmail",
+        "minLength": 2,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_.]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_bot_channel_ms_teams",
+        "abbreviation": "botteams",
+        "minLength": 2,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_.]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_bot_channel_slack",
+        "abbreviation": "botslack",
+        "minLength": 2,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_.]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_bot_channel_directline",
+        "abbreviation": "botline",
+        "minLength": 2,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_.]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_bot_channels_registration",
+        "abbreviation": "botchan",
+        "minLength": 2,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_.]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_bot_connection",
+        "abbreviation": "botcon",
+        "minLength": 2,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_.]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_redis_cache",
+        "abbreviation": "redis",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": true,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_redis_firewall_rule",
+        "abbreviation": "redisfw",
+        "minLength": 1,
+        "maxLength": 256,
+        "validationRegex": "^[a-zA-Z0-9]{1,256}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_cdn_profile",
+        "abbreviation": "cdnprof",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,258}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_cdn_endpoint",
+        "abbreviation": "cdn",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_cognitive_account",
+        "abbreviation": "cog",
+        "minLength": 2,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_availability_set",
+        "abbreviation": "avail",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_.]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_disk_encryption_set",
+        "abbreviation": "des",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9_]{1,80}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_image",
+        "abbreviation": "img",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_.]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_linux_virtual_machine",
+        "abbreviation": "vm",
+        "minLength": 1,
+        "maxLength": 64,
+        "validationRegex": "",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "prefixes",
+                "environment",
+                "location",
+                "name",
+                "suffixes"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_linux_virtual_machine_scale_set",
+        "abbreviation": "vmss",
+        "minLength": 1,
+        "maxLength": 64,
+        "validationRegex": "^[^/[]:|<>+=;,?*@&_][^/[]:|<>+=;,?*@&]{0,62}[^/[]:|<>+=;,?*@&.-]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_managed_disk",
+        "abbreviation": "dsk",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,80}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "name",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_machine",
+        "abbreviation": "vm",
+        "minLength": 1,
+        "maxLength": 15,
+        "validationRegex": "",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "prefixes",
+                "environment",
+                "location",
+                "name",
+                "suffixes"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_machine_scale_set",
+        "abbreviation": "vmss",
+        "minLength": 1,
+        "maxLength": 15,
+        "validationRegex": "^[^/[]:|<>+=;,?*@&_][^/[]:|<>+=;,?*@&]{0,13}[^/[]:|<>+=;,?*@&.-]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_windows_virtual_machine",
+        "abbreviation": "vm",
+        "minLength": 1,
+        "maxLength": 15,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,15}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "prefixes",
+                "environment",
+                "location",
+                "name",
+                "suffixes"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_windows_virtual_machine_scale_set",
+        "abbreviation": "vmss",
+        "minLength": 1,
+        "maxLength": 15,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,15}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_containerGroups",
+        "abbreviation": "cg",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": true,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_container_registry",
+        "abbreviation": "cr",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_container_registry_webhook",
+        "abbreviation": "crwh",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9]{1,50}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_kubernetes_cluster",
+        "abbreviation": "aks",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_]{0,61}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_cosmosdb_account",
+        "abbreviation": "cosmos",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-zA-Z0-9-_.]{0,61}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_custom_provider",
+        "abbreviation": "prov",
+        "minLength": 3,
+        "maxLength": 64,
+        "validationRegex": "^[^&%?/]{2,63}[^&%.?/ ]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_mariadb_server",
+        "abbreviation": "maria",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-zA-Z0-9-]{1,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_mariadb_firewall_rule",
+        "abbreviation": "mariafw",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,128}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_mariadb_database",
+        "abbreviation": "mariadb",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_mariadb_virtual_network_rule",
+        "abbreviation": "mariavn",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,128}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_mysql_server",
+        "abbreviation": "mysql",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-zA-Z0-9-]{1,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_mysql_firewall_rule",
+        "abbreviation": "mysqlfw",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,128}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_mysql_database",
+        "abbreviation": "mysqldb",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_mysql_virtual_network_rule",
+        "abbreviation": "mysqlvn",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,128}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_postgresql_server",
+        "abbreviation": "psql",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-zA-Z0-9-]{1,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_postgresql_firewall_rule",
+        "abbreviation": "psqlfw",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,128}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_postgresql_database",
+        "abbreviation": "psqldb",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_postgresql_virtual_network_rule",
+        "abbreviation": "psqlvn",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,128}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_database_migration_project",
+        "abbreviation": "migr",
+        "minLength": 2,
+        "maxLength": 57,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_.]{1,56}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_database_migration_service",
+        "abbreviation": "dms",
+        "minLength": 2,
+        "maxLength": 62,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_.]{1,61}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_databricks_workspace",
+        "abbreviation": "dbw",
+        "minLength": 3,
+        "maxLength": 30,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,30}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_kusto_cluster",
+        "abbreviation": "kc",
+        "minLength": 4,
+        "maxLength": 22,
+        "validationRegex": "^[a-z][a-z0-9]{3,21}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_kusto_database",
+        "abbreviation": "kdb",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9- .]{1,260}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_kusto_eventhub_data_connection",
+        "abbreviation": "kehc",
+        "minLength": 1,
+        "maxLength": 40,
+        "validationRegex": "^[a-zA-Z0-9- .]{1,40}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory",
+        "abbreviation": "adf",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory_dataset_mysql",
+        "abbreviation": "adfmysql",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,258}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory_dataset_postgresql",
+        "abbreviation": "adfpsql",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,258}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory_dataset_sql_server_table",
+        "abbreviation": "adfmssql",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,258}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory_integration_runtime_managed",
+        "abbreviation": "adfir",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory_pipeline",
+        "abbreviation": "adfpl",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,258}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory_linked_service_data_lake_storage_gen2",
+        "abbreviation": "adfsvst",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,259}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory_linked_service_key_vault",
+        "abbreviation": "adfsvkv",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,259}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_recovery_services_vault",
+        "abbreviation": "rsv",
+        "minLength": 2,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z][a-zA-Z0-9-]{1,49}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_recovery_services_vault_backup_police",
+        "abbreviation": "rsvbp",
+        "minLength": 3,
+        "maxLength": 150,
+        "validationRegex": "^[a-zA-Z][a-zA-Z0-9-]{1,148}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory_linked_service_mysql",
+        "abbreviation": "adfsvmysql",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,259}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory_linked_service_postgresql",
+        "abbreviation": "adfsvpsql",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,259}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory_linked_service_sql_server",
+        "abbreviation": "adfsvmssql",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,259}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_factory_trigger_schedule",
+        "abbreviation": "adftg",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,259}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_lake_analytics_account",
+        "abbreviation": "dla",
+        "minLength": 3,
+        "maxLength": 24,
+        "validationRegex": "^[a-z0-9]{3,24}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_lake_analytics_firewall_rule",
+        "abbreviation": "dlfw",
+        "minLength": 3,
+        "maxLength": 50,
+        "validationRegex": "^[a-z0-9-_]{3,50}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_lake_store",
+        "abbreviation": "dls",
+        "minLength": 3,
+        "maxLength": 24,
+        "validationRegex": "^[a-z0-9]{3,24}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_data_lake_store_firewall_rule",
+        "abbreviation": "dlsfw",
+        "minLength": 3,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,50}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_dev_test_lab",
+        "abbreviation": "lab",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,50}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_dev_test_linux_virtual_machine",
+        "abbreviation": "labvm",
+        "minLength": 1,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9-]{1,64}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_dev_test_windows_virtual_machine",
+        "abbreviation": "labvm",
+        "minLength": 1,
+        "maxLength": 15,
+        "validationRegex": "^[a-zA-Z0-9-]{1,15}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_frontdoor",
+        "abbreviation": "fd",
+        "minLength": 5,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{3,62}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_frontdoor_firewall_policy",
+        "abbreviation": "fdfw",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_hdinsight_hadoop_cluster",
+        "abbreviation": "hadoop",
+        "minLength": 3,
+        "maxLength": 59,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,57}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_hdinsight_hbase_cluster",
+        "abbreviation": "hbase",
+        "minLength": 3,
+        "maxLength": 59,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,57}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_hdinsight_kafka_cluster",
+        "abbreviation": "kafka",
+        "minLength": 3,
+        "maxLength": 59,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,57}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_hdinsight_interactive_query_cluster",
+        "abbreviation": "iqr",
+        "minLength": 3,
+        "maxLength": 59,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,57}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_hdinsight_ml_services_cluster",
+        "abbreviation": "mls",
+        "minLength": 3,
+        "maxLength": 59,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,57}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_hdinsight_rserver_cluster",
+        "abbreviation": "rser",
+        "minLength": 3,
+        "maxLength": 59,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,57}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_hdinsight_spark_cluster",
+        "abbreviation": "spark",
+        "minLength": 3,
+        "maxLength": 59,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,57}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_hdinsight_storm_cluster",
+        "abbreviation": "storm",
+        "minLength": 3,
+        "maxLength": 59,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,57}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_iotcentral_application",
+        "abbreviation": "iotapp",
+        "minLength": 2,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_iothub",
+        "abbreviation": "iot",
+        "minLength": 3,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,48}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_iothub_consumer_group",
+        "abbreviation": "iotcg",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9-._]{1,50}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_iothub_dps",
+        "abbreviation": "dps",
+        "minLength": 3,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9-]{1,63}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_iothub_dps_certificate",
+        "abbreviation": "dpscert",
+        "minLength": 1,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9-._]{1,64}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_key_vault",
+        "abbreviation": "kv",
+        "minLength": 3,
+        "maxLength": 24,
+        "validationRegex": "^[a-zA-Z][a-zA-Z0-9-]{1,22}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": true,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_key_vault_key",
+        "abbreviation": "kvk",
+        "minLength": 1,
+        "maxLength": 127,
+        "validationRegex": "^[a-zA-Z0-9-]{1,127}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_key_vault_secret",
+        "abbreviation": "kvs",
+        "minLength": 1,
+        "maxLength": 127,
+        "validationRegex": "^[a-zA-Z0-9-]{1,127}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_key_vault_certificate",
+        "abbreviation": "kvc",
+        "minLength": 1,
+        "maxLength": 127,
+        "validationRegex": "^[a-zA-Z0-9-]{1,127}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_lb",
+        "abbreviation": "lb",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_lb_nat_rule",
+        "abbreviation": "lbnatrl",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_public_ip",
+        "abbreviation": "pip",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "name",
+                "suffixes",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_public_ip_abbreviation",
+        "abbreviation": "pippf",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_route",
+        "abbreviation": "rt",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_route_table",
+        "abbreviation": "rt",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "name",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_subnet",
+        "abbreviation": "snet",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "name",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_traffic_manager_profile",
+        "abbreviation": "traf",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-.]{0,61}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_wan",
+        "abbreviation": "vwan",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "name",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_hub",
+        "abbreviation": "hub",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_network",
+        "abbreviation": "vnet",
+        "minLength": 2,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,62}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_network_gateway",
+        "abbreviation": "vgw",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_network_peering",
+        "abbreviation": "vpeer",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_network_interface",
+        "abbreviation": "nic",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "name",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_firewall",
+        "abbreviation": "afw",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "name",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_eventhub",
+        "abbreviation": "evh",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_eventhub_namespace",
+        "abbreviation": "ehn",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z][a-zA-Z0-9-]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_eventhub_authorization_rule",
+        "abbreviation": "ehar",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_eventhub_namespace_authorization_rule",
+        "abbreviation": "ehnar",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_eventhub_namespace_disaster_recovery_config",
+        "abbreviation": "ehdr",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_eventhub_consumer_group",
+        "abbreviation": "ehcg",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_stream_analytics_job",
+        "abbreviation": "asa",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_stream_analytics_function_javascript_udf",
+        "abbreviation": "asafunc",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_stream_analytics_output_blob",
+        "abbreviation": "asaoblob",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_stream_analytics_output_mssql",
+        "abbreviation": "asaomssql",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_stream_analytics_output_eventhub",
+        "abbreviation": "asaoeh",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_stream_analytics_output_servicebus_queue",
+        "abbreviation": "asaosbq",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_stream_analytics_output_servicebus_topic",
+        "abbreviation": "asaosbt",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_stream_analytics_reference_input_blob",
+        "abbreviation": "asarblob",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_stream_analytics_stream_input_blob",
+        "abbreviation": "asaiblob",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_stream_analytics_stream_input_eventhub",
+        "abbreviation": "asaieh",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_stream_analytics_stream_input_iothub",
+        "abbreviation": "asaiiot",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_shared_image_gallery",
+        "abbreviation": "sig",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9.]{0,78}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_shared_image",
+        "abbreviation": "si",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_snapshots",
+        "abbreviation": "snap",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_storage_account",
+        "abbreviation": "st",
+        "minLength": 3,
+        "maxLength": 24,
+        "validationRegex": "^[a-z0-9]{3,24}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "prefixes",
+                "environment",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_storage_container",
+        "abbreviation": "stct",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-z0-9-]{2,62}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": true,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_storage_data_lake_gen2_filesystem",
+        "abbreviation": "stdl",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-z0-9-]{1,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": true,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_storage_queue",
+        "abbreviation": "stq",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-z0-9-]{1,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": true,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_storage_table",
+        "abbreviation": "stt",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-z0-9-]{1,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": true,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_storage_share",
+        "abbreviation": "sts",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-z0-9-]{1,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": true,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_storage_share_directory",
+        "abbreviation": "sts",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-z0-9-]{1,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": true,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_machine_learning_workspace",
+        "abbreviation": "mlw",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[^<>*%:.?+/]{0,259}[^<>*%:.?+/ ]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_storage_blob",
+        "abbreviation": "blob",
+        "minLength": 1,
+        "maxLength": 1024,
+        "validationRegex": "^[^s/$#&]{1,1000}[^s/$#&]{0,24}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_bastion_host",
+        "abbreviation": "bastion",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_local_network_gateway",
+        "abbreviation": "lgw",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_application_gateway",
+        "abbreviation": "agw",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "suffixes",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_web_application_firewall_policy",
+        "abbreviation": "waf",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "suffixes",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_express_route_gateway",
+        "abbreviation": "ergw",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_vpn_gateway",
+        "abbreviation": "vpn",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_express_route_circuit",
+        "abbreviation": "erc",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_point_to_site_vpn_gateway",
+        "abbreviation": "vpngw",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "abbreviation",
+                "name",
+                "location",
+                "environment",
+                "suffixes"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_template_deployment",
+        "abbreviation": "deploy",
+        "minLength": 1,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9-._()]{1,64}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_sql_server",
+        "abbreviation": "sql",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_mssql_server",
+        "abbreviation": "sql",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_mssql_database",
+        "abbreviation": "sqldb",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[^<>*%:.?+/]{1,127}[^<>*%:.?+/ ]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_sql_elasticpool",
+        "abbreviation": "sqlep",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[^<>*%:.?+/]{1,127}[^<>*%:.?+/ ]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_mssql_elasticpool",
+        "abbreviation": "sqlep",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[^<>*%:.?+/]{1,127}[^<>*%:.?+/ ]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_sql_failover_group",
+        "abbreviation": "sqlfg",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_sql_firewall_rule",
+        "abbreviation": "sqlfw",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[^<>*%:?+/]{1,127}[^<>*%:.?+/]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_log_analytics_workspace",
+        "abbreviation": "log",
+        "minLength": 4,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{2,61}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_service_fabric_cluster",
+        "abbreviation": "sf",
+        "minLength": 4,
+        "maxLength": 23,
+        "validationRegex": "^[a-z][a-z0-9-]{2,21}[a-z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_maps_account",
+        "abbreviation": "map",
+        "minLength": 1,
+        "maxLength": 98,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,97}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_network_watcher",
+        "abbreviation": "nw",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_resource_group",
+        "abbreviation": "rg",
+        "minLength": 1,
+        "maxLength": 90,
+        "validationRegex": "^[a-zA-Z0-9-._()]{0,89}[a-zA-Z0-9-_()]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "suffixes",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_network_security_group",
+        "abbreviation": "nsg",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "name",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_network_security_group_rule",
+        "abbreviation": "nsgr",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_network_security_rule",
+        "abbreviation": "nsgr",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_application_security_group",
+        "abbreviation": "asg",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "name"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_dns_zone",
+        "abbreviation": "dns",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,61}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_private_dns_zone",
+        "abbreviation": "pdns",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,61}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_notification_hub",
+        "abbreviation": "nh",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,259}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_notification_hub_namespace",
+        "abbreviation": "dnsrec",
+        "minLength": 6,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z][a-zA-Z0-9-]{4,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_notification_hub_authorization_rule",
+        "abbreviation": "dnsrec",
+        "minLength": 1,
+        "maxLength": 256,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,255}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_servicebus_namespace",
+        "abbreviation": "sb",
+        "minLength": 6,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z][a-zA-Z0-9-]{4,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_servicebus_namespace_authorization_rule",
+        "abbreviation": "sbar",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_servicebus_queue",
+        "abbreviation": "sbq",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,258}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_servicebus_queue_authorization_rule",
+        "abbreviation": "sbqar",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_servicebus_subscription",
+        "abbreviation": "sbs",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_servicebus_subscription_rule",
+        "abbreviation": "sbsr",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_servicebus_topic",
+        "abbreviation": "sbt",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,258}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_servicebus_topic_authorization_rule",
+        "abbreviation": "dnsrec",
+        "minLength": 1,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_powerbi_embedded",
+        "abbreviation": "pbi",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{2,62}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": true,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_dashboard",
+        "abbreviation": "dsb",
+        "minLength": 3,
+        "maxLength": 160,
+        "validationRegex": "^[a-zA-Z0-9-]{3,160}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_signalr_service",
+        "abbreviation": "sgnlr",
+        "minLength": 3,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_eventgrid_domain",
+        "abbreviation": "egd",
+        "minLength": 3,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9-]{3,50}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_eventgrid_domain_topic",
+        "abbreviation": "egdt",
+        "minLength": 3,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9-]{3,50}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_eventgrid_event_subscription",
+        "abbreviation": "egs",
+        "minLength": 3,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9-]{3,64}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_eventgrid_topic",
+        "abbreviation": "egt",
+        "minLength": 3,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z0-9-]{3,50}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_relay_namespace",
+        "abbreviation": "rln",
+        "minLength": 6,
+        "maxLength": 50,
+        "validationRegex": "^[a-zA-Z][a-zA-Z0-9-]{4,48}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_relay_hybrid_connection",
+        "abbreviation": "rlhc",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,258}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_app_service",
+        "abbreviation": "app",
+        "minLength": 2,
+        "maxLength": 60,
+        "validationRegex": "^[0-9A-Za-z][0-9A-Za-z-]{0,58}[0-9a-zA-Z]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_windows_function_app",
+        "abbreviation": "func",
+        "minLength": 2,
+        "maxLength": 60,
+        "validationRegex": "^[0-9A-Za-z][0-9A-Za-z-]{0,58}[0-9a-zA-Z]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_function_app",
+        "abbreviation": "func",
+        "minLength": 2,
+        "maxLength": 60,
+        "validationRegex": "^[0-9A-Za-z][0-9A-Za-z-]{0,58}[0-9a-zA-Z]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_service_plan",
+        "abbreviation": "plan",
+        "minLength": 1,
+        "maxLength": 40,
+        "validationRegex": "^[0-9A-Za-z-]{1,40}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_app_service_plan",
+        "abbreviation": "plan",
+        "minLength": 1,
+        "maxLength": 40,
+        "validationRegex": "^[0-9A-Za-z-]{1,40}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_app_service_environment",
+        "abbreviation": "ase",
+        "minLength": 2,
+        "maxLength": 36,
+        "validationRegex": "^[0-9A-Za-z-]{2,36}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_application_insights",
+        "abbreviation": "appi",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[^%&?/. ][^%&?/]{0,258}[^%&?/. ]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "aks_node_pool_linux",
+        "abbreviation": "npl",
+        "minLength": 1,
+        "maxLength": 12,
+        "validationRegex": "^[a-z][0-9a-z]{0,11}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "aks_node_pool_windows",
+        "abbreviation": "npw",
+        "minLength": 1,
+        "maxLength": 6,
+        "validationRegex": "^[a-z][0-9a-z]{0,5}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_synapse_workspace",
+        "abbreviation": "syws",
+        "minLength": 1,
+        "maxLength": 45,
+        "validationRegex": "^[0-9a-z]{1,45}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_synapse_spark_pool",
+        "abbreviation": "sysp",
+        "minLength": 1,
+        "maxLength": 15,
+        "validationRegex": "^[0-9a-zA-Z]{1,15}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_synapse_sql_pool ",
+        "abbreviation": "sysql",
+        "minLength": 1,
+        "maxLength": 15,
+        "validationRegex": "^[0-9a-zA-Z]{1,15}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_synapse_firewall_rule",
+        "abbreviation": "syfw",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[^<>*%:?+/]{1,127}[^<>*%:.?+/]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_user_assigned_identity",
+        "abbreviation": "mi",
+        "minLength": 3,
+        "maxLength": 128,
+        "validationRegex": "^[0-9a-zA-Z_-]{3,128}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_private_dns_zone_virtual_network_link",
+        "abbreviation": "pnetlk",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_private_endpoint",
+        "abbreviation": "pe",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_private_service_connection",
+        "abbreviation": "psc",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_firewall_ip_configuration",
+        "abbreviation": "fwipconf",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_firewall_application_rule_collection",
+        "abbreviation": "fwapp",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_firewall_nat_rule_collection",
+        "abbreviation": "fwnatrc",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_firewall_network_rule_collection",
+        "abbreviation": "fwnetrc",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_dns_a_record",
+        "abbreviation": "dnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_dns_aaaa_record",
+        "abbreviation": "dnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_dns_caa_record",
+        "abbreviation": "dnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_dns_cname_record",
+        "abbreviation": "dnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_dns_mx_record",
+        "abbreviation": "dnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_dns_ns_record",
+        "abbreviation": "dnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_dns_ptr_record",
+        "abbreviation": "dnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_dns_txt_record",
+        "abbreviation": "dnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_private_dns_a_record",
+        "abbreviation": "pdnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_private_dns_aaaa_record",
+        "abbreviation": "pdnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_private_dns_cname_record",
+        "abbreviation": "pdnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_private_dns_mx_record",
+        "abbreviation": "pdnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_private_dns_ptr_record",
+        "abbreviation": "pdnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_private_dns_srv_record",
+        "abbreviation": "pdnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_private_dns_txt_record",
+        "abbreviation": "pdnsrec",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_machine_extension",
+        "abbreviation": "vmx",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_machine_scale_set_extension",
+        "abbreviation": "vmssx",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_network_ddos_protection_plan",
+        "abbreviation": "ddospp",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_private_dns_zone_group",
+        "abbreviation": "pdnszg",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_proximity_placement_group",
+        "abbreviation": "ppg",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_private_link_service",
+        "abbreviation": "pls",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_monitor_action_group",
+        "abbreviation": "ag",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9 ][a-zA-Z0-9-._ ]{0,258}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_monitor_scheduled_query_rules_alert",
+        "abbreviation": "logalert",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9 ][a-zA-Z0-9-._ ]{0,258}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "prefixes",
+                "name",
+                "location",
+                "environment",
+                "suffixes"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_monitor_metric_alert",
+        "abbreviation": "metricalert",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9 ][a-zA-Z0-9-._ ]{0,258}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "prefixes",
+                "name",
+                "location",
+                "environment",
+                "suffixes"
+            ]
+        }
+    },
+    {
+        "resourceType": "azure_monitor_activity_log_alert",
+        "abbreviation": "aclogalert",
+        "minLength": 1,
+        "maxLength": 260,
+        "validationRegex": "^[a-zA-Z0-9 ][a-zA-Z0-9-._ ]{0,258}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_network_connection_monitor",
+        "abbreviation": "NCMonitor",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9 ][a-zA-Z0-9-._ ]{0,258}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "prefixes",
+                "name",
+                "location",
+                "environment",
+                "suffixes"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_firewall_policy",
+        "abbreviation": "fwp",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9 ][a-zA-Z0-9-._ ]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_firewall_policy_rule_collection_group",
+        "abbreviation": "fwprcp",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9 ][a-zA-Z0-9-._ ]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_ip_group",
+        "abbreviation": "ipgrp",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9 ][a-zA-Z0-9-._ ]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_virtual_network_gateway_connection",
+        "abbreviation": "vngc",
+        "minLength": 1,
+        "maxLength": 80,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9_]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "databricks_cluster",
+        "abbreviation": "dbc",
+        "minLength": 3,
+        "maxLength": 30,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,30}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "databricks_standard_cluster",
+        "abbreviation": "dbsc",
+        "minLength": 3,
+        "maxLength": 30,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,30}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "databricks_high_concurrency_cluster",
+        "abbreviation": "dbhcc",
+        "minLength": 3,
+        "maxLength": 30,
+        "validationRegex": "^[a-zA-Z0-9-_]{3,30}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "general",
+        "abbreviation": "",
+        "minLength": 1,
+        "maxLength": 250,
+        "validationRegex": "^[a-zA-Z0-9-_]{1,250}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "general_safe",
+        "abbreviation": "",
+        "minLength": 1,
+        "maxLength": 250,
+        "validationRegex": "^[a-z]{1,250}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": false,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azuread_application",
+        "abbreviation": "aadapp",
+        "minLength": 1,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9-]{1,64}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azuread_service_principal",
+        "abbreviation": "aadspn",
+        "minLength": 1,
+        "maxLength": 64,
+        "validationRegex": "^[a-zA-Z0-9-]{1,64}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azuread_group",
+        "abbreviation": "aadgrp",
+        "minLength": 1,
+        "maxLength": 128,
+        "validationRegex": "^[a-zA-Z0-9-]{1,128}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azapi_managed_environment",
+        "abbreviation": "env",
+        "minLength": 1,
+        "maxLength": 63,
+        "validationRegex": "^[a-zA-Z0-9-]{1,63}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azapi_container_app",
+        "abbreviation": "app",
+        "minLength": 2,
+        "maxLength": 32,
+        "validationRegex": "^[a-zA-Z0-9-]{2,32}$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": true,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": []
+        }
+    },
+    {
+        "resourceType": "azurerm_monitor_data_collection_endpoint",
+        "abbreviation": "dce",
+        "minLength": 1,
+        "maxLength": 60,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    },
+    {
+        "resourceType": "azurerm_monitor_data_collection_rule",
+        "abbreviation": "dcr",
+        "minLength": 1,
+        "maxLength": 60,
+        "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-._]{0,78}[a-zA-Z0-9]$",
+        "configuration": {
+            "useEnvironment": true,
+            "useLowerCase": false,
+            "useSeparator": true,
+            "denyDoubleHyphens": false,
+            "namePrecedence": [
+                "environment",
+                "prefixes",
+                "name",
+                "location",
+                "abbreviation"
+            ]
+        }
+    }
+]
