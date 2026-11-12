@@ -1,0 +1,50 @@
+flowchart LR
+    tech[Technicians<br/>Germany + France<br/>~400 managed users] -->|Corporate network; HTTPS 443; Kerberos SPNEGO| dns[Private corporate DNS]
+    dc[(On-prem Active Directory<br/>DNS / KDC)] <-->|Private WAN / VPN or ExpressRoute| hub[Azure private network]
+    wms[Wuppertal WMS] -->|Hourly stock file; SFTP 22<br/>private WAN| hub
+    dns --> hub
+
+    subgraph DE[PRD primary - Germany West Central / EU]
+        appLB[Internal application LB<br/>private SPX FQDN]
+        sftpLB[Internal SFTP LB<br/>private SPX SFTP FQDN]
+        subgraph AZ1[Availability zone 1]
+            app1[RHEL 9 VM<br/>Java 17 Spring Boot<br/>Kerberos keytab]
+            sftp1[SPX SFTP ingress VM]
+        end
+        subgraph AZ2[Availability zone 2]
+            app2[RHEL 9 VM<br/>Java 17 Spring Boot<br/>Kerberos keytab]
+            sftp2[SPX SFTP ingress VM]
+        end
+        landing[(EU Blob stock landing<br/>durable / replayable)]
+        db[(Private PostgreSQL Flexible Server<br/>zone-redundant HA; ~50 GB)]
+        vault[EU Key Vault<br/>keys / API secrets]
+        backup[EU Backup vault<br/>monthly points >=6 months]
+        obs[EU monitoring<br/>logs / metrics / alerts]
+        egress[Controlled HTTPS egress]
+        appLB --> app1 & app2
+        sftpLB --> sftp1 & sftp2
+        sftp1 & sftp2 -->|Validated completed file| landing
+        landing -->|Idempotent hourly import| app1 & app2
+        app1 & app2 --> db
+        app1 & app2 --> vault
+        app1 & app2 --> obs
+        db --> backup
+        app1 & app2 --> egress
+    end
+
+    hub --> appLB
+    hub --> sftpLB
+    app1 & app2 <-->|SPNEGO service ticket validation| dc
+    egress -->|Shipment create; HTTPS 443| dhl[DHL shipping API<br/>external processing / residency review]
+
+    subgraph FR[Proposed DR - France Central / EU]
+        drapp[Preprovisioned app + SFTP tier<br/>private endpoints; controlled cutover]
+        drdb[(Warm PostgreSQL read replica<br/>asynchronous; lag monitored)]
+        drbackup[EU recovery access / backup plan]
+        drapp --> drdb
+        drbackup -. restore alternative .-> drdb
+    end
+    db -->|Async replication; RPO not guaranteed| drdb
+    backup -. recovery points .-> drbackup
+    hub -. DR private route / AD reachability .-> drapp
+    dns -. Manual DNS switch after fencing + promotion .-> drapp
